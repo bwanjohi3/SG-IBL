@@ -1,0 +1,49 @@
+{
+    "implementation": "standard",
+    "repl": false,
+    "console": false,
+    "log": false,
+    "debug": true,
+    "masterBus": {
+        "logLevel": "error",
+        "socket": false
+    },
+    "workerBus": {
+        "logLevel": "error"
+    },
+    "backend": {
+        "logLevel": "error",
+        "uri": "/rpc",
+        "url": "http://127.0.0.1:8004",
+        "method": "post"
+    },
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        },
+        "test": true
+    },
+     "db": {
+         "db": {
+             "server": "infradb14",
+             "user": "gitlab",
+             "password": "gitlab",
+             "requestTimeout": 60000
+         },
+         "create": {
+            "user": "ut5"
+         },
+         "permission": {
+             "requireSession": true
+         },
+         "embozer": {
+             "endOfRecord": "0D0A"
+         },
+         "card": {
+             "quantityLowLimit": 1000
+         },
+         "logLevel": "trace"
+     }
+}

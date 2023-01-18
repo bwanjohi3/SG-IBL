@@ -1,0 +1,50 @@
+@startuml
+    skinparam BoxPadding 10
+    actor Cardholder
+    Cardholder -> ATM
+    box "CTP service"
+        participant ncr as atmPort << tcp port >>
+        participant ctpScript << script port >>
+        participant hsm <<script port>>
+        participant payshield <<tcp port>>
+        participant flow as flowClient << rpc port >>
+        participant ncr as ctpServer << http server port >>
+    end box
+    ATM --> atmPort : NDC \n<transaction>
+    activate ATM
+    atmPort --> ctpScript : aptra.\ntransaction
+    ctpScript -> hsm : hsm.pinOffset
+    activate ctpScript
+    hsm -> payshield : payshield.\ngenerateOffsetIbm
+    activate hsm
+    payshield -> hsm
+    hsm -> ctpScript
+    deactivate hsm
+    deactivate ctpScript
+    ctpScript --> flowClient : atm.transaction
+    box "Flow service"
+        participant ncr as ctpClient << rpc port >>
+        participant atmFlow as flowServer << http server port >>
+        participant atmScript << script port >>
+    end box
+    flowClient --> flowServer : atm.transaction
+    flowServer --> atmScript : atm.transaction
+    activate atmScript
+    atmScript -> ctpClient : ncr.transactionReply
+    activate ctpClient
+    ctpClient -> ctpServer : ncr.\ntransactionReply
+    activate ctpServer
+    ctpServer -> atmPort : ncr.transactionReply
+    activate atmPort
+    atmPort -> ATM : NDC \n<transactionReply>
+    ATM -> Cardholder : dispense
+    ATM -> atmPort : NDC \n<solicitedStatus>
+    deactivate ATM
+    atmPort -> ctpServer
+    deactivate atmPort
+    ctpServer -> ctpClient
+    deactivate ctpServer
+    ctpClient -> atmScript
+    deactivate ctpClient
+    deactivate atmScript
+@enduml

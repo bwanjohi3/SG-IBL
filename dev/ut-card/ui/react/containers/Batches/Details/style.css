@@ -1,0 +1,169 @@
+.contentWrapper {
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: left;
+    font-family: Roboto,Arial;
+    font-size: 14px;
+}
+
+.contentWrap {
+    border-top: 1px solid #E6E6E6;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.containerSideAlignings {
+    margin: 0 auto;
+    width: 75%;
+}
+.rowTopMargin {
+    margin-top: 10px;
+}
+.rowMargin {
+    margin-top: 10px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.rowPaddings {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #E6E6E6;;
+}
+.statusWrapper {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.status {
+    text-align: center;
+    background-color: #FF9900;
+    width: 140px;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.gridContainer {
+    padding: 30px 0 50px 0;
+}
+.paginationContainer {
+    position: relative;
+    bottom: 34px;
+    padding: 0px;
+}
+.dataGridTableBatches {
+    width: 100%;
+    font-family: Roboto,Arial;
+    font-size: 14px;
+}
+
+.dataGridTableBatches a {
+    color: #0074ba;
+    text-decoration: none;
+}
+
+.dataGridTableBatches a:hover {
+    text-decoration: underline;
+}
+
+.dataGridTableBatches tr td, .dataGridTableBatches tr th {
+    padding: .35rem;
+}
+
+.dataGridTableBatches thead tr {
+    border-bottom: 3px solid #D7D6D6;
+}
+
+.dataGridTableBatches tr {
+    cursor: pointer;
+}
+
+.dataGridTableBatches tbody tr:nth-child(2n) {
+    background: #F7F7F7;
+}
+
+.dataGridTableBatches tbody tr:hover {
+    background: #F7F7F7;
+}
+.dataGridTableBatches thead,
+.dataGridTableBatches thead tr,
+.dataGridTableBatches thead tr td {
+    color: #595959;
+}
+.floatRightSeparated{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+.floatLeftSeparated{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+.rejectContent>div {
+    padding: 15px 0;
+    border-top: 1px solid #D7D6D6;
+    text-align: left;
+}
+.rejectContent textarea {
+    resize: none;
+    border-width: 0px;
+    outline: none;
+    height: 50px;;
+}
+.rejectContent>div>div:first-child {
+    width: 100%;
+    text-align: left;
+}
+.readonly input{
+    background-color: #F5F5F5;
+}
+
+.editable .input {
+    background-color: #FFFFFF;
+}
+
+.reasonWrapper input {
+    border-width: 0px;
+}
+
+.reasonCommentWrapper textarea{
+    resize: none;
+    border-width: 0px;
+    outline: none;
+}
+.dataGridTableDetailTable {
+    width: 100%;
+}
+tr.gridBodyTr.checked:nth-child(2n),
+tr.gridBodyTr.checked:hover,
+tr.gridBodyTr:hover,
+tr.gridBodyTr:nth-child(2n),
+tr.gridBodyTr {
+    background: #f5f5f5;
+}
+tr.gridBodyTr {
+    cursor: pointer;
+    border-bottom: 1px solid #D7D6D6;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+.dataGridTableDetailTable td {
+    padding: 15px;
+}
+tr.gridBodyTr td:first-child {
+    padding-left: 15px;
+}
+
+export const titleStyle{
+    background-color: '#F5F5F5';
+    padding: '15px 0 5px 0';
+    border-bottom: '1px solid #D7D6D6'
+};

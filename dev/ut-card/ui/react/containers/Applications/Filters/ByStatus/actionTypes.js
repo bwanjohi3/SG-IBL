@@ -1,0 +1,1 @@
+export const UPDATE_CARD_STATUS = Symbol('UPDATE_CARD_STATUS');

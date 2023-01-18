@@ -1,0 +1,49 @@
+{
+    "implementation": "iblatmpos",
+    "masterBus": {
+        "socket": "iblatmpos-ctp"
+    },
+    "debug": true,
+    "monitoring": {
+        "jwt": {
+            "key": "with a value in an extension methods or authentication function will be considered"
+        }
+    },
+    "performance": false,
+    "log": {
+        "transformData": {
+            "hash": "hide",
+            "rawData": "hide"
+        },
+        "streams": [{
+            "level": "trace",
+            "stream": "../logRotateStream",
+            "streamConfig": {
+                "path": "ut5_%Y-%m-%d.log",
+                "symlink": "ut5.log",
+                "compress": true
+            }
+        }]
+    },
+    "repl": false,
+    "console":  false,
+    "iso": {
+        "institutionCode": "111111",
+        "listen_": false,
+        "port_": "3111",
+        "format": {
+            "fieldFormat": {
+                "header": {"format": "binary", "size": 1},
+                "footer": {"format": "string", "size": 2},
+                "32": {"format": "string", "size": 10, "prefixSize": 2},
+                "33": {"format": "string", "size": 10, "prefixSize": 2},
+                "43": {"format": "string", "size": 99, "prefixSize": 2},
+                "47": {"format": "string", "size": 4, "prefixSize": 2},
+                "55": {"format": "string", "size": 255, "prefixSize": 3},
+                "61": {"format": "string", "size": 11},
+                "84": {"format": "string", "size": 9},
+                "100": {"format": "string", "size": 10, "prefixSize": 2}
+            }
+        }
+    }
+}

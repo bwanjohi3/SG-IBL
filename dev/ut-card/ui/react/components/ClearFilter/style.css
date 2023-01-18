@@ -1,0 +1,14 @@
+.clearBtn {
+    width: 28px;
+    height: 28px;
+    margin-top: 1px;
+    background-color: #F4F4F4;
+    background-image: url('./images/clearfilters-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

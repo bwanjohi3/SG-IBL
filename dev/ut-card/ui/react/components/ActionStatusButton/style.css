@@ -1,0 +1,69 @@
+@import './default-config.css';
+@import 'config.css';
+
+.statusActionButtonDisabled,
+.statusActionButton{
+    border: 1px solid #ccc;
+    color: #444;
+    background: #f4f4f4;
+    border-radius: 4px;
+    padding: 4px 15px;
+}
+
+.statusActionButton:hover{
+    border-color: #999;
+    color: #000;
+}
+
+.statusActionButtonDisabled{
+    opacity: .65;
+}
+
+.statusActionButtonDisabled:hover{
+    cursor: not-allowed;
+    border-color: #999;
+    color: #000;
+}
+
+.actionStatusButtonPadRight{
+    width: 5px;
+    height: 1px;
+    display: inline-block;
+}
+.actionStatusButtonWrap{
+    display: inline-block;
+}
+
+.highlighted{
+    background: var(--ut-card-standardButtonHightlightColor);
+    color: var(--ut-card-standardButtonTextColor);
+}
+.highlighted:hover{
+    color: #ffffff;
+}
+.highlighted-ApproveNamed{
+    background: #4096fd;
+    color: white;
+}
+
+/*used in batch details*/
+.highlighted-Approve{
+    background: #4096fd;
+    color: white;
+}
+.highlighted-SentToProduction{
+    background: #4096fd;
+    color: white;
+}
+.highlighted-GeneratePINMails{
+    background: #4096fd;
+    color: white;
+}
+.highlighted-Update{
+    background: #4096fd;
+    color: white;
+}
+.highlighted-Complete{
+    background: #4096fd;
+    color: white;
+}

@@ -1,0 +1,156 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-card@5.228.0-rc-acapulco.1",
+        "scope": null,
+        "escapedName": "ut-card",
+        "name": "ut-card",
+        "rawSpec": "5.228.0-rc-acapulco.1",
+        "spec": "5.228.0-rc-acapulco.1",
+        "type": "version"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard"
+    ]
+  ],
+  "_from": "ut-card@5.228.0-rc-acapulco.1",
+  "_id": "ut-card@5.228.0-rc-acapulco.1",
+  "_inCache": true,
+  "_location": "/ut-card",
+  "_nodeVersion": "6.9.5",
+  "_npmUser": {},
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {
+    "hoek": "4.2.0",
+    "isemail": "2.2.1",
+    "items": "2.1.1",
+    "react-transition-group": "1.2.1",
+    "topo": "2.0.2"
+  },
+  "_requested": {
+    "raw": "ut-card@5.228.0-rc-acapulco.1",
+    "scope": null,
+    "escapedName": "ut-card",
+    "name": "ut-card",
+    "rawSpec": "5.228.0-rc-acapulco.1",
+    "spec": "5.228.0-rc-acapulco.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-card/-/ut-card-5.228.0-rc-acapulco.1.tgz",
+  "_shasum": "7efa0bfa828cadfbd637edea4f6b554d7154444e",
+  "_shrinkwrap": null,
+  "_spec": "ut-card@5.228.0-rc-acapulco.1",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard",
+  "author": "",
+  "dependencies": {
+    "classnames": "2.2.5",
+    "immutable": "3.8.1",
+    "joi": "10.0.6",
+    "joi-browser": "^10.0.6",
+    "material-ui": "0.16.5",
+    "react": "15.6.1",
+    "react-addons-transition-group": "15.6.0",
+    "react-dom": "15.6.1",
+    "react-redux": "5.0.5",
+    "react-router": "3.0.0",
+    "reactstrap": "3.9.5",
+    "redux": "3.7.2",
+    "split": "1.0.0",
+    "through2": "2.0.3",
+    "ut-error": "^5.4.9"
+  },
+  "description": "This module implements card management functions.",
+  "devDependencies": {
+    "@kadira/storybook": "^2.35.1",
+    "babel-jest": "20.0.3",
+    "babel-loader": "6.2.10",
+    "babel-preset-es2015-without-strict": "0.0.4",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-0": "6.16.0",
+    "bootstrap": "4.0.0-alpha.2",
+    "css-loader": "0.26.1",
+    "file-loader": "0.9.0",
+    "jest": "20.0.4",
+    "style-loader": "0.13.1",
+    "ut-ledger": "1.23.1",
+    "ut-run": "^8.1.7",
+    "ut-test": "5.12.0-rc.5",
+    "ut-tools": "^5.17.3"
+  },
+  "dist": {
+    "shasum": "7efa0bfa828cadfbd637edea4f6b554d7154444e",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-card/-/ut-card-5.228.0-rc-acapulco.1.tgz"
+  },
+  "gitHead": "dea3b42c3ae18851b2d96cc4fc4cc11905e9a9ba",
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "ut-tools/jest/transform.js"
+    },
+    "cache": false,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(!ut-front-react)"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "cobertura",
+      "text"
+    ]
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "ut-card",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "ut-ctp": "^5.19.1",
+    "ut-core": "^6.6.0",
+    "ut-customer": "^6.9.8",
+    "ut-document": "^6.0.3",
+    "ut-front": "^7.2.0",
+    "ut-front-react": "^9.13.0",
+    "ut-port-jsonrpc": "^5.6.12",
+    "ut-transfer": "^6.20.0",
+    "ut-port-sql": "^6.8.0",
+    "ut-user": "^7.29.0",
+    "ut-emv": "^6.1.1",
+    "ut-report": "^5.20.0"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwaregroup-bg.com/repository/npm-internal"
+  },
+  "readme": "\n# Module ut-card\n\nThis module implements card management functions.\n\n## Terms\n\n## Functional requirements\n\n## Module settings\n\nConfiguring the front-end of this module should be set in implementation in ui/solution(administration)/config/card.js.\n\nSample content of card.js is:\n\n```javascript\nexport const cardConfig = {\n    usedCardTypes: 'both',\n    application: {\n        grid: {\n            fields: ['applicationId', 'embossedTypeName', 'personName', 'customerName', 'productName', 'typeName', 'batchName', 'currentBranchName', 'issuingBranchName', 'targetBranchName', 'createdOn', 'statusName'],\n            orderByFields: ['applicationId', 'embossedTypeName', 'personName', 'customerName', 'productName', 'typeName', 'batchName', 'currentBranchName', 'issuingBranchName', 'targetBranchName', 'createdOn', 'statusName']\n        },\n        filters: {\n            filterByCardType: true,\n            filterByProduct: true,\n            filterByIssuingBU: true,\n            filterByStatus: true,\n            filterByCurrentBU: true,\n            filterByCustomSearch: {\n                fields: ['customerName', 'customerNumber', 'personName', 'batchName', 'applicationId', 'cardNumber'],\n                defaultField: 'customerName'\n            }\n        },\n        details: {\n            fields: ['productName', 'customerName', 'customerType', 'personName', 'holderName', 'customerNumber', 'issuingBranchName', 'applicationId', 'targetBranchName', 'batchName', 'createdOn', 'makerComments']\n        },\n        accounts: {\n            available: {\n                fields: ['accountTypeName', 'currency', 'accountNumber', 'methodOfOperationId'],\n                customStyles: {\n                    currency: {width: '15%'}\n                }\n            },\n            linked: {\n                fields: ['accountTypeName', 'currency', 'accountNumber', 'methodOfOperationId'],\n                customStyles: {\n                    currency: {width: '15%'}\n                }\n            }\n        },\n        createName: {\n            hidePerson: true\n        }\n    },\n    batches: {\n        autoGenerateBatchName: false,\n        statusFlow: ['New', 'Approved', 'Production', 'Completed'],\n        grid: {\n            fields: ['batchName', 'targetBranchName', 'issuingBranchName', 'productName', 'numberOfCards', 'generatedPinMails', 'downloads', 'batchDateSent', 'batchDateCreated', 'batchStatus'],\n            orderByFields: ['batchName', 'targetBranchName', 'issuingBranchName', 'productName', 'numberOfCards', 'generatedPinMails', 'downloads', 'batchDateSent', 'batchDateCreated', 'batchStatus']\n        },\n        filters: {\n            filterByTargetBU: true,\n            filterByIssuingBU: true,\n            filterByProduct: true,\n            filterByStatus: true,\n            filterByBatchName: true\n        },\n        details: {\n            fields: ['batchType', 'batchName', 'numberOfCards', 'typeName', 'targetBranchName', 'issuingBranchName']\n        }\n    },\n    cardsInUse: {\n        grid: {\n            fields: ['cardNumber', 'personName', 'customerName', 'productName', 'currentBranchName', 'issuingBranchName', 'generatedPinMails', 'activationDate', 'expirationDate', 'statusName'],\n            orderByFields: ['personName', 'customerName', 'productName', 'currentBranchName', 'issuingBranchName', 'generatedPinMails', 'activationDate', 'expirationDate', 'statusName']\n        },\n        filters: {\n            filterByProduct: true,\n            filterByIssuingBU: true,\n            filterByStatus: true,\n            filterByCustomSearch: {\n                fields: ['customerName', 'customerNumber', 'cardNumber', 'personName'],\n                defaultField: 'customerName'\n            }\n        },\n        details: {\n            fields: ['customerName', 'personName', 'customerNumber', 'customerType', 'cardholderName', 'activationDate', 'expirationDate', 'creationBranchName', 'batchName']\n        },\n        accounts: {\n            available: {\n                fields: ['accountTypeName', 'currency', 'accountNumber', 'methodOfOperationId'],\n                customStyles: {\n                    currency: {width: '15%'}\n                }\n            },\n            linked: {\n                fields: ['accountTypeName', 'currency', 'accountNumber', 'methodOfOperationId'],\n                customStyles: {\n                    currency: {width: '15%'}\n                }\n            }\n        }\n    },\n    cards: {\n        grid: {\n            fields: ['cardNumber', 'productName', 'currentBranchName', 'targetBranchName', 'issuingBranchName', 'expirationDate', 'generatedPinMails', 'batchName', 'statusName'],\n            orderByFields: ['productName', 'currentBranchName', 'targetBranchName', 'issuingBranchName', 'expirationDate', 'generatedPinMails', 'batchName', 'statusName']\n        },\n        details: {\n            fields: ['customerName', 'personName', 'customerNumber', 'customerType', 'cardProduct', 'cardholderName', 'creationBranchName', 'targetBranchName', 'expirationDate', 'updatedOn', 'batchName']\n        },\n        filters: {\n            filterByProduct: true,\n            filterByTargetBU: true,\n            filterByIssuingBU: true,\n            filterByStatus: true,\n            filterByCustomSearch: {\n                fields: ['customerName', 'customerNumber', 'cardNumber', 'personName', 'batchName'],\n                defaultField: 'customerName'\n            }\n        }\n    },\n    cardProducts: {\n        periodicCardFeeOptional: true,\n        grid: {\n            fields: ['name', 'description', 'startDate', 'endDate', 'cardTypeName', 'embossedTypeName', 'bin', 'cardNumberConstruction', 'isActive'],\n            orderByFields: ['name', 'description', 'startDate', 'endDate', 'cardTypeName', 'embossedTypeName', 'bin', 'cardNumberConstruction', 'isActive']\n        },\n        filters: {\n            filterByStatus: true,\n            filterByName: true\n        }\n    },\n    cardReasons: {\n        grid: {\n            fields: ['module', 'actionName', 'reasonName', 'isActive'],\n            orderByFields: ['module', 'actionName', 'reasonName', 'isActive']\n        },\n        filters: {\n            filterByModule: true,\n            filterByAction: true,\n            filterByStatus: true,\n            filterByReasonName: true\n        }\n    },\n    cardBins: {\n        grid: {\n            fields: ['binId', 'bin', 'description', 'isActive'],\n            orderByFields: ['binId', 'bin', 'description', 'isActive']\n        },\n        filters: {\n            filterByStatus: true\n        }\n    }\n};\n```\n\n#### Common configuration\nConfiguration that is common for all pages\n- 'usedCardTypes' - what kind of cards the company uses\n    Valid values are:\n    - 'both'\n    - 'noNamed'\n    - 'named'\n\n#### Shared Configurations\nConfigurations structure that is the same in some pages:\n- 'grid'\n    - 'fields' - Used for hiding and showing columns in grid\n    - 'orderByFields' - Used for allowing on which columns order can be applied\n- 'filters' - Used for hiding and showing filters. For example values see the sample\n- 'details' - Used for hiding and showing fields in details popup\n\n#### applications configuration\n- 'accounts' - Configures account section in popup.\n    - 'available' - object responsible for 'available' accounts subsection configuration\n        - 'fields' - Hides and shows columns in 'available' subsection\n        - 'customStyles' - Configures inline styles for the columns\n    - 'linked' - object responsible for 'linked' accounts subsection configuration\n        - 'fields' - Hides and shows columns in 'linked' subsection\n        - 'customStyles' - Configures inline styles for the columns\n- createName - Configuration for create name application popup.\n    - 'hidePerson' hides or shows person field\n    \n#### batches configuration\n- 'autoGenerateBatchName'\n    Hides and shows batch name field when creating no name batch. If value is true batch name will be generated and shown after batch creation\n- 'statusFlow'\n- 'cardsAutoAllocation' - Auto-allocation branch on batch completion\n    Valid values are:\n    - null (which sets it to the branchId of the batch; the dropdown is hidden)\n    - 'branchId'\n    - 'targetBranchId'\n    - 'issuingBranchId'\n    (all three show cards auto-allocation dropdown when completing batch, the option sets which branch of the batch will be selected by default)\n\n#### cardsInUse configuration\n- 'accounts' - Same configuration structure as in application\n\n#### cards configuration\n\n#### cardProducts configuration\n- 'periodicCardFeeOptional' - If set to true makes periodic card fee field optional instead of required. By default is required.\n#### cardReasons configuration\n\n#### cardBins configuration\n \n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.softwaregroup-bg.com:ut5/ut-card.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "sb-react": "start-storybook -c ./ui/react/storybook -p 9009",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "5.228.0-rc-acapulco.1"
+}

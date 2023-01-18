@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UnderTree ATM Monitoring</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/tooltip.css" rel="stylesheet">
+    </head>
+    <body>
+        <article id="alert" class="alert alert-dismissible alert-success" style="display: none">
+            <button id="closeAlert" type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong id="alertText"></strong>
+        </article>
+        <form class="form-inline" id="atmfilter">
+            <div class="form-group">
+                <label for="atmFilterType">Filter Terminals</label>
+                <select class="form-control" id="atmFilterType">
+                    <option value="0">LUNO</option>
+                    <option value="1">Device Location</option>
+                    <option value="2">Terminal ID</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="atmFilterInput" placeholder="">
+            </div>
+        </form>
+        <form id="atmconnected">
+            <label class="radio-inline">
+                <input type="radio" name="connectedFilter" id="allRadio" value="3" checked> All
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="connectedFilter" id="connectedRadio" value="0"> Connected
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="connectedFilter" id="disconnectedRadio" value="1"> Disconnected
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="connectedFilter" id="unknownRadio" value="2"> Unknown
+            </label>
+        </form>
+        <div class="scrollable-table-wrap">
+            <table id="atmTable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="vcenter" rowspan="2">LUNO</th>
+                        <th class="vcenter" rowspan="2">Device Location</th>
+                        <th class="vcenter" rowspan="2">Terminal ID</th>
+                        <th class="vcenter" rowspan="2">Connected</th>
+                        <th class="vcenter" rowspan="2">In service</th>
+                        <th class="vcenter hcenter" colspan="8">Sensors</th>
+                        <th class="vcenter hcenter" colspan="8">Hardware fitness</th>
+                        <th class="vcenter hcenter" colspan="6">Supplies</th>
+                        <th class="vcenter hcenter" colspan="6">Counters</th>
+                        <th class="vcenter hcenter" colspan="4">Commands</th>
+                    </tr>
+                    <tr>
+                        <th>Supervisor</th>
+                        <th>Safe door</th>
+                        <th>Top door</th>
+                        <th>C1</th>
+                        <th>C2</th>
+                        <th>C3</th>
+                        <th>C4</th>
+                        <th>Rj</th>
+                        <th>Card reader</th>
+                        <th>PIN Pad</th>
+                        <th>Cash handler</th>
+                        <th>Receipt printer</th>
+                        <th>C1</th>
+                        <th>C2</th>
+                        <th>C3</th>
+                        <th>C4</th>
+                        <th>C1</th>
+                        <th>C2</th>
+                        <th>C3</th>
+                        <th>C4</th>
+                        <th>Rj</th>
+                        <th>Paper</th>
+                        <th>C1</th>
+                        <th>C2</th>
+                        <th>C3</th>
+                        <th>C4</th>
+                        <th>Cards</th>
+                        <th>Details</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="atmStatusTableBody"></tbody>
+            </table>
+        </div>
+        <form class="form-inline" id="atmPagination">
+            <div class="form-group">
+                <label for="atmPageSize">Terminals per page</label>
+                <select class='form-control' id="atmPageSize">
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="*">All</option>
+                </select>
+            </div>
+            <div class="form-group atmPageNumberWrap">
+                <ul id="atmPageNumber" />
+            </div>
+        </form>
+        <form class="form-inline" id="transferFilter">
+            <div class="form-group">
+                <label for="atmFilterType">Card flow</label>
+                <select class="form-control" id="cardFlowSelect" name="transferFlow">
+                    <option value=".">ALL</option>
+                    <option value="atm">On us</option>
+                    <option value="iso">Not on us</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transferAcquirerInput">Terminal ID</label>
+                <input type="text" class="form-control" id="transferAcquirerInput" placeholder="" name="transferAcquirer">
+            </div>
+            <div class="form-group">
+                <label for="transferIssuerInput">Issuer</label>
+                <input type="text" class="form-control" id="transferIssuerInput" placeholder="" name="transferIssuer">
+            </div>
+        </form>
+        <div class="scrollable-table-wrap">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tx ID</th>
+                        <th>Card Number</th>
+                        <th>Transaction Time</th>
+                        <th>Debit Account</th>
+                        <th>Credit Account</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Terminal ID</th>
+                        <th>Issuer</th>
+                        <th>Response Code</th>
+                        <th>Additional Info</th>
+                        <th>Device Location</th>
+                        <th>Product Name</th>
+                        <th>Merchant</th>
+                        <th>Reversal Code</th>
+                        <th>Currency</th>
+                        <th>Alerts</th>
+                    </tr>
+                </thead>
+                <tbody id="atmTransfersTableBody"></tbody>
+            </table>
+        </div>
+        <div id="supplyCounters" class="modal fade in">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="countersClose" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="countersTitle"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cassette</th>
+                                    <th>Loaded</th>
+                                    <th>Dispensed</th>
+                                    <th>Rejected</th>
+                                    <th>Available</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Type 1</td>
+                                    <td id="toploaded"></td>
+                                    <td id="topdispensed"></td>
+                                    <td id="toprejected"></td>
+                                    <td id="topnotes"></td>
+                                </tr>
+                                <tr>
+                                    <td>Type 2</td>
+                                    <td id="secondloaded"></td>
+                                    <td id="seconddispensed"></td>
+                                    <td id="secondrejected"></td>
+                                    <td id="secondnotes"></td>
+                                </tr>
+                                <tr>
+                                    <td>Type 3</td>
+                                    <td id="thirdloaded"></td>
+                                    <td id="thirddispensed"></td>
+                                    <td id="thirdrejected"></td>
+                                    <td id="thirdnotes"></td>
+                                </tr>
+                                <tr>
+                                    <td>Type 4</td>
+                                    <td id="bottomloaded"></td>
+                                    <td id="bottomdispensed"></td>
+                                    <td id="bottomrejected"></td>
+                                    <td id="bottomnotes"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p id="transactions"></p>
+                        <p id="cardscaptured"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="login" class="modal fade in" style="display:none">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h4 class="modal-title"></h4>
+                        <button id="login-modal-btn" type="button" class="btn btn-primary btn-xs" onclick="window.location.href=config.ssoAuthUrl+btoa(window.location.href)" aria-hidden="true">Login</button>
+                        <button id="logout-modal-btn" type="button" class="btn btn-primary btn-xs" onclick="app.net.ajax('logout', {}, function() {window.location.reload();})" aria-hidden="true">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="logout-btn" type="button" class="btn btn-primary btn-xs" onclick="app.net.ajax('logout', {}, function() {window.location.reload();})" aria-hidden="true">Logout</button>
+        <script src="js/config.js"></script>
+        <script src="js/terminal.js"></script>
+        <script src="js/table-manager.js"></script>
+        <script src="js/net.js"></script>
+        <script src="js/iconMap.js"></script>
+        <script src="js/tooltip.js"></script>
+    </body>
+</html>

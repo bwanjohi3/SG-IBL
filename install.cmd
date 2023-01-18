@@ -1,0 +1,2 @@
+nssm.exe install
+pause

@@ -1,0 +1,20 @@
+#dateTimePicker{
+    z-index: 3;
+}
+
+#logger {
+    z-index: 2;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+#spinner{
+    z-index: 999;
+    position: absolute;
+    top:12px;
+    right:12px;
+    display: none;
+}

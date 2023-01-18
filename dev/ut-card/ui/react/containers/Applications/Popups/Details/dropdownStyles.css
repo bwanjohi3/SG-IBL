@@ -1,0 +1,37 @@
+/* Common */
+@import './default-config.css';
+@import 'config.css';
+
+/* this styles are in separate file to prevent overwriting wrong classes and performance of merging style in dropdown component*/
+.dropdownWrap {
+    background-color: #FFFFFF;
+    width: 100%;
+    position: relative;
+    border: 1px solid #D6D6D6;
+    height: 30px;
+}
+
+.dropdownWrap div {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 26px !important;
+    border: none !important;
+    color: #595959 !important;
+    top: 0 !important;
+    text-align: left !important;
+}
+
+.dropdownWrap .dropDownRoot {
+    width: 100% !important;
+    height: 28px !important;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-left: 10px !important;
+}
+
+.dropdownIconBackground svg { /* pass over material ui styling limitations */
+    background-color: var(--ut-front-react-standardPaginationBackgroundActiveColor);
+    top: 1px !important;
+    right: 1px !important;
+}

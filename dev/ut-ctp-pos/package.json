@@ -1,0 +1,50 @@
+{
+  "name": "ut-ctp-pos",
+  "version": "6.5.0-rc-cubalibre.5",
+  "description": "Card transactions pre-processing module for POS",
+  "main": "index.js",
+  "dependencies": {
+    "date-fns": "1.29.0",
+    "jsonwebtoken": "8.1.1",
+    "boom": "^5.1.0",
+    "ut-codec-iso8583": "^6.1.10"
+  },
+  "devDependencies": {
+    "ut-tools": "^5.30.0"
+  },
+  "peerDependencies": {
+    "ut-bus": "^6.0.0",
+    "ut-port-httpserver": "^9.0.0",
+    "ut-port-script": "^6.0.0",
+    "ut-port-tcp": "^6.0.0"
+  },
+  "scripts": {
+    "lint": "ut-lint .",
+    "test": "ut-test",
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "precover": "ut-precover",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "version": "ut-version",
+    "jenkins": "ut-jenkins",
+    "gitlab": "ut-gitlab"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwaregroup-bg.com/repository/npm-internal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.softwaregroup-bg.com:ut5/ut-ctp-pos.git"
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}

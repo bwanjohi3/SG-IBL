@@ -1,0 +1,19 @@
+module.exports = params => `{
+"outputtype":"Json",
+"Sessionid":"NS-bb0bb3bb-6feb-11e4-80c6-00155d45b772",
+"Initiator":"Switch",
+"Source":"ATM",
+"Type":"Withdrawal",
+"Method":"${params.method}",
+"AccountId":"${params.sourceAccount}",
+"Amount":"${params.amount.transfer.amount}",
+"DeviceId":"${params.udfAcquirer.terminalId}",
+"Identifier":"${params.requestId}",
+"AccountName":"null",
+"ReceiptNumber":"null",
+"BankNumber":"null",
+"CheckNumber":"null",
+"BankAccountNumber":"null",
+"BankRoutingNumber":"null",
+"Notes":"${params.description}"
+}`;

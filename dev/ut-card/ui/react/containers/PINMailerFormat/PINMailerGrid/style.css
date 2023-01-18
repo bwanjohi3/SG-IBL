@@ -1,0 +1,95 @@
+@import './default-config.css';
+@import 'config.css';
+
+.girdOrderHeadingStyle {
+    padding: 0;
+}
+.gridHeaderTr {
+    background: #F9F9F9;
+    cursor: pointer;
+    border: 1px solid #D7D6D6;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+.dataGridTable {
+    font-family: Roboto,Arial;
+    border: 1px solid #D7D6D6;
+    font-size: 14px;
+    padding: 0
+}
+
+.dataGridTable a {
+    color: var(--ut-front-react-standardDataGridTableColor);
+    text-decoration: none;
+}
+
+.dataGridTable a:hover {
+    color: var(--ut-front-react-standardDataGridTableColor);
+    text-decoration: underline;
+}
+
+.dataGridTable tr td, .dataGridTable tr th {
+    padding: 0;
+    min-width: 20px;
+    width: 20px;
+    min-height: 31px;
+    height: 31px;
+    border-right: 1px solid #D7D6D6;
+    padding: 5px 0 5px 0;
+    cursor: crosshair;
+}
+
+.tableWrap {
+    width: 100%;
+    background: #f2f2f2;
+    padding: 10px 20px 20px 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: absolute;
+    top: 120px;
+    bottom: 10px;
+    overflow-y: auto;
+}
+
+.componentWrap {
+    width: 100%;
+    background: #f2f2f2;
+    padding: 5px 30px 5px 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow-y: auto;
+}
+.containerWrap {
+    margin-left: 0;
+    padding: 10px 0 0 20px;
+}
+.componentsWrap {
+    padding-left: 15px;
+    width: 200px;
+}
+.componentsWrap_numericInput {
+    padding: 0;
+    width: 70px;
+}
+.outerWrap {
+    width: 100%;
+}
+.inputWrap {
+    width: 40% !important;
+}
+.lableWrap {
+    width: 70%;
+    padding: 5px 0;
+}
+.checkBoxWrap {
+    padding-left: 0;
+    padding-top: 5px;
+    width: 200px;
+}
+.inchesWrap {
+    width: 100px;
+    padding: 5px 0;
+}

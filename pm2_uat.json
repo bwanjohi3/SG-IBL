@@ -1,0 +1,13 @@
+{
+    "apps": [{
+        "name": "standard",
+        "script": "index.js",
+        "args": [NODE_ARGUMENTS],
+        "watch"       : false,
+        "ignore_watch": ["node_modules"],
+        // "max_memory_restart" : "300M", // restart application if memory usage is more than 300M
+        "env": {
+            "UT_ENV": "uat"
+        }
+    }]
+}

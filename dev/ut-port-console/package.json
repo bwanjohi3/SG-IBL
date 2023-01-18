@@ -1,0 +1,117 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-port-console@6.4.0",
+        "scope": null,
+        "escapedName": "ut-port-console",
+        "name": "ut-port-console",
+        "rawSpec": "6.4.0",
+        "spec": "6.4.0",
+        "type": "version"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard"
+    ]
+  ],
+  "_from": "ut-port-console@6.4.0",
+  "_id": "ut-port-console@6.4.0",
+  "_inCache": true,
+  "_location": "/ut-port-console",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ut-port-console-6.4.0.tgz_1506915229280_0.7187693957239389"
+  },
+  "_npmUser": {
+    "name": "kalin.krustev",
+    "email": "kalin.krustev@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "ammo": "2.0.4",
+    "hoek": "4.2.0",
+    "items": "2.1.1",
+    "joi": "10.6.0",
+    "pseudomap": "1.0.2",
+    "yallist": "2.1.2"
+  },
+  "_requested": {
+    "raw": "ut-port-console@6.4.0",
+    "scope": null,
+    "escapedName": "ut-port-console",
+    "name": "ut-port-console",
+    "rawSpec": "6.4.0",
+    "spec": "6.4.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-port-console/-/ut-port-console-6.4.0.tgz",
+  "_shasum": "121c629d44540edbad0447c03719092de12873b0",
+  "_shrinkwrap": null,
+  "_spec": "ut-port-console@6.4.0",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard",
+  "bugs": {
+    "url": "https://github.com/softwaregroup-bg/ut-port-console/issues"
+  },
+  "dependencies": {
+    "boom": "5.1.0",
+    "hapi": "16.0.2",
+    "inert": "4.0.4",
+    "jsonwebtoken": "7.4.1",
+    "lodash.assign": "4.2.0",
+    "lodash.merge": "4.6.0",
+    "ndjson": "1.5.0",
+    "ut-port-httpserver": "^8.12.1"
+  },
+  "description": "UT port console module",
+  "devDependencies": {
+    "socket.io-client": "2.0.3",
+    "ut-tools": "^5.17.26"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "121c629d44540edbad0447c03719092de12873b0",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-port-console/-/ut-port-console-6.4.0.tgz"
+  },
+  "gitHead": "18df38a95a7ad007518e18f89d7edeee8698fbb8",
+  "homepage": "https://github.com/softwaregroup-bg/ut-port-console#readme",
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "kalin.krustev",
+      "email": "kalin.krustev@gmail.com"
+    }
+  ],
+  "name": "ut-port-console",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "ut-bus": "^5.12.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/softwaregroup-bg/ut-port-console.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.4.0"
+}

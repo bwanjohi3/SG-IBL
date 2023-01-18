@@ -1,0 +1,107 @@
+{
+    "test": true,
+    "implementation": "standard",
+    "defaultLanguage": "en",
+    "debug": true,
+    "repl": false,
+    "console": false,
+    "scheduler": false,
+    "db": {
+        "db": {
+            "server": "devdb08",
+            "database": "impl-standard",
+            "user": "gitlab",
+            "password": "gitlab",
+            "requestTimeout": 60000
+        },
+        "create": {
+            "user": "ut5"
+        },
+        "permission": {
+            "requireSession": true
+        },
+        "embosser": {
+            "endOfRecord": "0D0A"
+        },
+        "card": {
+            "quantityLowLimit": 1000,
+            "pinLength": 4,
+            "dataGenCheckLimit": 100,
+            "pinMailerFormat": ">L>L>L>L>L>L>L>L>L>010^0>L>010^1>L>010^2>L>010^3>055^P>L>F>"
+        },
+        "logLevel": "error"
+    },
+    "auditdb": {
+        "db": {
+            "server": "devdb08",
+            "database": "impl-standard-audit",
+            "requestTimeout": 20000
+        },
+        "create": {
+            "user": "ut5"
+        },
+        "logLevel": "error"
+    },
+    "historydb": {
+        "db": {
+            "server": "devdb08",
+            "database": "impl-standard-history",
+            "requestTimeout": 800000
+        },
+        "create": {
+            "user": "ut5"
+        },
+        "logLevel": "error"
+    },
+    "httpserverAdministration": {
+        "port": 0,
+        "allowXFF": true,
+        "disableXsrf": {
+            "http": true
+        }
+    },
+    "mirrors": {
+        "url": "http://192.168.132.20/Mirrorsapi/",
+         "uriMap": {
+            "mirrors.viewReport": "/api/documentviewer",
+            "mirrors.getReport": "/api/reports"
+         }
+    },
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        }
+    },
+    "stdOut": {
+        "mode": "dev"
+    },
+    "log": false,
+    "masterBus": {
+        "logLevel": "debug",
+        "socket": "standard-db"
+    },
+    "workerBus": {
+        "logLevel": "debug"
+    },
+    "alert": {
+        "push": {
+            "deviceOSToProvider": {
+                "android": "firebase"
+            }
+        },
+        "ports": {
+            "email": {
+                "channel": "email"
+            },
+            "firebase" : {
+                "channel": "push"
+            }
+        }
+    },
+    "firebase": {
+        "apiKey": "AAAAzS-tQPM:APA91bHoVcdY-QYDpRniu3zA2WZwB6lXB0uun8tsShp4MjBrABdo5vcrGUp0dhmutSiZ_NltphZgH1m9krCqJRqCseLS2xrwG_wPakg-38lpQ_utpwttWvHOJBcKotcvOgJeuVcKhQCP"
+    },
+    "masterCryptKey": "769977E7018D5AA9D60C79AFA11BA4520FD1CE0D2D24A7A978A28236563F6695"
+}

@@ -1,0 +1,81 @@
+.dataGridTableCustomFields {
+    width: 100%;
+    font-family: Roboto,Arial;
+    font-size: 14px;
+}
+
+.dataGridTableCustomFields a {
+    color: #0074ba;
+    text-decoration: none;
+}
+
+.dataGridTableCustomFields a:hover {
+    text-decoration: underline;
+}
+
+.dataGridTableCustomFields tr td, .dataGridTableCustomFields tr th {
+    padding: 15px;
+}
+
+.dataGridTableCustomFields thead tr {
+    border-bottom: 3px solid #404040;
+}
+.dataGridTableCustomFields tr {
+    cursor: pointer;
+    background: #f5f5f5;
+}
+.dataGridTableCustomFields tr:last-child {
+    border-bottom: none;
+}
+
+.widgetNum {
+    position: relative;
+}
+.widgetNumWidget {
+    display: block;
+    overflow: visible;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -25px;
+    background: url(./images/bookmarks.png) no-repeat top right;
+}
+.widgetNumWidget.booked{
+    background-position: top left;
+}
+.widgetNumNum{
+    background: #D7D6D6;
+    position: absolute;
+    top: -5px;
+    left: -6px;
+    padding: 5px;
+}
+.widgetNumValue{
+    padding-left: 20px;
+    display: inline-block;
+}
+.accountAction {
+    border: 1px solid transparent;
+    line-height: 25px;
+    margin: 0 5px;
+}
+.accountAction:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #D7D6D6;
+    transition: background-color .3s;
+    border-radius: 2px;
+}
+.icon-Remove, .icon-Link {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.icon-Remove {
+    background: url('./../commonImages/remove.png') no-repeat center;
+}
+.icon-Link {
+    background: url('./images/link.png') no-repeat center;
+}

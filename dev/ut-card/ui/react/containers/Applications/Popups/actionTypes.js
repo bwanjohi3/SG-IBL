@@ -1,0 +1,1 @@
+export const UPDATE_CLOSE_REFETCH = Symbol('UPDATE_CLOSE_REFETCH');

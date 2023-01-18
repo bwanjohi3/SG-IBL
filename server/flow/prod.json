@@ -1,0 +1,112 @@
+{
+    "implementation": "iblatmpos",
+    "masterBus": {
+        "socket": "standard-atm-flow"
+    },
+    "debug": true,
+    "masterCryptKey": "769977E7018D5AA9D60C79AFA11BA4520FD1CE0D2D24A7A978A28236563F6695",
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "192.168.77.12",
+            "port": 1433
+        },
+        "logLevel": "error"
+    },
+    "repl": false,
+    "console":{
+        "port": 30002,
+        "server": {
+            "host": "0.0.0.0",
+            "port": 30002
+        },"disableXsrf": {
+            "ws": true
+        },
+        "disablePermissionVerify": {
+            "ws": true
+        },
+        "jwt": {
+            "key": "with a value in an extension methods or authentication function will be considered"
+        },
+        "ssoAuthUrl": "http://localhost:8035/administration.html#/sso/console/",
+        "cookie": {
+            "isSecure": false,
+            "isHttpOnly": false,
+            "clearInvalid": false,
+            "strictHeader": false
+        }
+    },
+    "stdOut": {
+        "mode": "dev"
+    },
+    "atmScript": {
+        "debug": true
+    },
+    "log": {
+        "transformData": {
+            "hash": "hide",
+            "rawData": "hide"
+        },
+        "streams": [{
+            "level": "trace",
+            "stream": "../logRotateStream",
+            "streamConfig": {
+                "path": "ut5_%Y-%m-%d.log",
+                "symlink": "ut5.log",
+                "compress": true
+            }
+        }]
+    },
+    "db": {
+        "logLevel": "trace",
+        "permission": {
+            "requireSession": true
+        },
+        "testATM": true
+    },
+	 "httpserverAdministration": {
+        "port": 8035,
+        "monitoringSocketAddress": "192.168.77.11:8007",
+        "ssoAuthUrl": "http://192.168.77.11:8035/#/sso/monitoring/",
+        "appId": "monitoring",
+		 "packer": {
+            "hotReload": true,
+            "translate": "./public/messages.en.po",
+            "name": "webpack"
+        },
+		"cookie": {
+            "isSecure": false,
+            "isHttpOnly": false,
+            "clearInvalid": false,
+            "strictHeader": false
+        },
+        "disableXsrf": {
+            "ws": true
+        },
+        "disablePermissionVerify": {
+            "ws": true
+        }
+    },
+    "cbl": false,
+    "cbl_": {
+        "logLevel": "trace",
+        "host":"localhost",
+        "port":"12398",
+        "destinationZpkIssuing":"U5DC14A4B06420C980603CD6623E497CC",
+        "destinationZmkIssuing":"U91BCE4E945771E09EE2B2CCC703F0D7A",        
+        "destinationZpkAcquiring":"U644F9EC92AA3ED7DC68993BA6FB9BD59",
+        "destinationZmkAcquiring":"U91BCE4E945771E09EE2B2CCC703F0D7A",
+        "cblaccount":"00111850314354802",
+        "iblincomeaccount":"00120740838160102",
+        "_host":"localhost",
+        "_port":"1433",
+        "maximumPinLength":8,
+        "sourcePinBlockFormat":"01",
+        "destinationPinBlockFormat":"01",
+		"requestTimeout": 150000
+    },
+    "rmp": {
+        "logLevel": "trace",
+        "url": "https://mm-pre-wf01.bayportcloud.com/decisions/Primary/?FlowId=13cfca26-555f-11e6-80cb-000d3ab1341d&Action=api&sessionid=NS-bb0bb3bb-6feb-11e4-80c6-00155d45b772"
+    }
+}

@@ -1,0 +1,10 @@
+export const OPEN_DETAILS_DIALOG = Symbol('OPEN_DETAILS_DIALOG');
+export const CLOSE_DETAILS_DIALOG = Symbol('CLOSE_DETAILS_DIALOG');
+export const FETCH_BIN_DETAILS = Symbol('FETCH_BIN_DETAILS');
+export const CHANGE_OWNERSHIP = Symbol('CHANGE_OWNERSHIP');
+export const CHANGE_DESCRIPTION = Symbol('CHANGE_DESCRIPTION');
+export const CHANGE_START_BIN = Symbol('CHANGE_START_BIN');
+export const CHANGE_END_BIN = Symbol('CHANGE_END_BIN');
+export const EDIT_BIN = Symbol('EDIT_BIN');
+export const STATUS_UPDATE_BIN = Symbol('STATUS_UPDATE_BIN');
+export const SET_ERRORS = Symbol('SET_ERRORS');

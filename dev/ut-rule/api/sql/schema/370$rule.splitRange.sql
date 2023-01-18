@@ -1,0 +1,20 @@
+CREATE TABLE [rule].[splitRange] (
+    splitRangeId INT IDENTITY(1000,1) NOT NULL,
+    splitNameId INT NOT NULL,
+    startAmount MONEY NOT NULL,
+    startAmountCurrency VARCHAR(3) NOT NULL,
+    startAmountDaily MONEY NOT NULL,
+    startCountDaily BIGINT NOT NULL,
+    startAmountWeekly MONEY NOT NULL,
+    startCountWeekly BIGINT NOT NULL,
+    startAmountMonthly MONEY NOT NULL,
+    startCountMonthly BIGINT NOT NULL,
+    isSourceAmount BIT NOT NULL,
+    minValue MONEY,
+    maxValue MONEY,
+    [percent] DECIMAL(9, 2),
+    percentBase MONEY,
+    CONSTRAINT [pkRuleSplitRange] PRIMARY KEY CLUSTERED (splitRangeId ASC),
+    CONSTRAINT [ukRuleSplitRange_splitNameId__startAmount__startAmountCurrency] UNIQUE (splitNameId, startAmount, startAmountCurrency, startAmountDaily, startCountDaily, startAmountWeekly, startCountWeekly, startAmountMonthly, startCountMonthly),
+    CONSTRAINT [fkRuleSplitRange_ruleSplitName] FOREIGN KEY (splitNameId) REFERENCES [rule].[splitName](splitNameId)
+)

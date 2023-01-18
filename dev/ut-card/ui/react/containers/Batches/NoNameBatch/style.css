@@ -1,0 +1,23 @@
+.contentWrapper {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.rowTopMargin {
+    margin-top: 10px;
+}
+.statusWrap {
+    margin: 0 auto;
+}
+
+.buttonsRightMargin {
+    margin-right: 5px;
+}
+.rowPaddings {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.borderBottom {
+    border-bottom: 2px solid #E6E6E6;
+}

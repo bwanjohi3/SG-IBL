@@ -1,0 +1,51 @@
+{
+    "implementation": "iblatmpos",
+    "service": "pos",
+    "masterBus": {
+        "socket": "ibl-atm-pos"
+    },
+    "debug": false,
+    "repl": false,
+    "log": {
+        "streams": [{
+            "level": "trace",
+            "stream": "../logRotateStream",
+            "streamConfig": {
+                "path": "ibl-atm-pos_%Y-%m-%d.json",
+                "symlink": "ibl-atm-pos.json",
+                "compress": true,
+                "type": "raw"
+            }
+        }]
+    },
+    "performance": {
+        "id": "ibl-atm-pos",
+        "influx": {
+            "host": "influxdb",
+            "port": 4445
+        }
+    },
+    "ctp": {
+        "port": 8008
+    },
+    "flow": {
+        "url": "http://localhost:8005"
+    },
+    "posctp": {
+        "port": 35010,
+        "listen": true,
+        "idleSend": false
+    },
+    "update": {
+        "port": 35011,
+        "listen": true,
+        "idleSend": false
+    },
+    "monitoring": {
+        "port": 7779,
+        "jwt": {"key": "abc 123 abc"},
+        "cookie": {"isSecure": false},
+        "appId": "monitoring",
+        "disablePermissionVerify": {"ws": true}
+    }
+}

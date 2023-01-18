@@ -1,0 +1,25 @@
+'use strict';
+module.exports = {
+    clock: undefined,
+    power: undefined,
+    cardReader: require('./cardReaderAlert'),
+    cashHandler: require('./cashHandlerAlert'),
+    depository: undefined,
+    receiptPrinter: require('./receiptPrinterAlert'),
+    journalPrinter: require('./journalPrinterAlert'),
+    nightDepository: undefined,
+    encryptor: require('./encryptorAlert'),
+    camera: undefined,
+    sensors: require('./sensorAlert'),
+    touchScreen: undefined,
+    supervisorKeys: undefined,
+    cardholderDisplay: undefined,
+    statementPrinter: undefined,
+    coinDispenser: undefined,
+    voiceGuidance: undefined,
+    barcodeReader: undefined,
+    chequeProcessor: undefined,
+    noteAcceptor: undefined,
+    envelopeDispenser: undefined,
+    other: require('./otherDeviceFaultAlert')
+};

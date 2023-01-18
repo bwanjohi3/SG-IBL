@@ -1,0 +1,1 @@
+DROP SYNONYM [integration].[vTransfer] CREATE SYNONYM [integration].[vTransfer] FOR [transfer].[vTransfer]

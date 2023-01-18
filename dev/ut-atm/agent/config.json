@@ -1,0 +1,8 @@
+{
+    "brand": "diebold",
+    "terminalId": "12345679",
+    "key": "keys\\private-key.pem",
+    "cert": "keys\\public-cert.pem",
+    "remotePort": 123,
+    "remoteHost": "172.16.33.4"
+}

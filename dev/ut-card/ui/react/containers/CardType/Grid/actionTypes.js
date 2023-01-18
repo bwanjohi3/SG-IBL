@@ -1,0 +1,9 @@
+export const FETCH = Symbol('FETCH_CARD_TYPES');
+export const EDIT = Symbol('EDIT_CARD_TYPE');
+export const CHECK = Symbol('CHECK_CARD_TYPE');
+export const MULTI_CHECK = Symbol('MULTI_CHECK_CARD_TYPES');
+export const REFETCH_CARD_TYPES = Symbol('REFETCH_CARD_TYPES');
+export const UPDATE_PAGINATION = Symbol('UPDATE_PAGINATION');
+export const TOGGLE_TYPE_STATUS = Symbol('TOGGLE_TYPE_STATUS');
+export const TOGGLE_COLUMN = Symbol('TOGGLE_COLUMN');
+export const SET_VISIBLE_COLUMNS = Symbol('SET_VISIBLE_COLUMNS');

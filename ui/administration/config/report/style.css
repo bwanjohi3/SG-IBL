@@ -1,0 +1,11 @@
+.dataGridTable th, .dataGridTable td {
+    border: 1px solid #D7D6D6;
+}
+
+.dataGridTable th {
+    padding: 2px 0 2px 10px;
+}
+
+.dataGridTable td, .dataGridTable th:last-child {
+    padding: 2px 10px;
+}

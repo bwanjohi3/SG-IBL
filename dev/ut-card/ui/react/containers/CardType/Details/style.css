@@ -1,0 +1,110 @@
+.contentWrapper {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.contentWrap {
+    border-top: 1px solid #E6E6E6;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.rowTopMargin {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.rowTopMargin textarea {
+    width: 100%;
+    border: 1px solid #d6d6d6;
+}
+
+.rowTopMargin:first-child {
+    padding-top: 30px;
+}
+
+.statusWrapper {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.status {
+    text-align: center;
+    background-color: #FF9900;
+    width: 140px;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.gridContainer {
+    padding: 30px 0 0 0;
+}
+.dataGridTableBatches {
+    width: 100%;
+    font-family: Roboto,Arial;
+    font-size: 14px;
+}
+
+.dataGridTableBatches a {
+    color: #0074ba;
+    text-decoration: none;
+}
+
+.dataGridTableBatches a:hover {
+    text-decoration: underline;
+}
+
+.dataGridTableBatches tr td, .dataGridTableBatches tr th {
+    padding: .35rem;
+}
+
+.dataGridTableBatches thead tr {
+    border-bottom: 3px solid #D7D6D6;
+}
+
+.dataGridTableBatches tr {
+    cursor: pointer;
+}
+
+.dataGridTableBatches tbody tr:nth-child(2n) {
+    background: #F7F7F7;
+}
+
+.dataGridTableBatches tbody tr:hover {
+    background: #F7F7F7;
+}
+
+.dataGridTableBatches thead,
+.dataGridTableBatches thead tr,
+.dataGridTableBatches thead tr td {
+    color: #595959;
+}
+
+.readonlyInput input{
+    background-color: #FAFAFA;
+
+}
+
+.checkbox {
+    padding-top: 8px;
+    margin-left: -8px;
+}
+
+.numberRequired {
+    font-size: 12px;
+}
+
+.popupButtons {
+    margin: 0 5px 0 0;
+}
+
+.textarea {
+    border: 1px solid #D6D6D6;
+    width: 100%;
+}
+
+.textareaWrapper textarea {
+    outline: none;
+}

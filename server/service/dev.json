@@ -1,0 +1,188 @@
+{
+    "implementation": "iblatmpos",
+    "checkPermission": true,
+    "defaultLanguage": "en",
+    "debug": true,
+    "repl_": false,
+    "db": {
+        "db": {
+            "server": "devdb08",
+            "database": "impl-standard",
+            "requestTimeout": 20000
+        },
+        "permission": {
+            "requireSession": true
+        },
+        "embosser": {
+            "endOfRecord": "0D0A"
+        },
+        "card": {
+            "quantityLowLimit": 1000,
+            "pinLength": 4,
+            "dataGenCheckLimit": 100,
+            "pinMailerFormat": ">L>L>L>L>L>L>L>L>L>010^0>L>010^1>L>010^2>L>010^3>055^P>L>F>"
+        },
+        "logLevel": "trace"
+    },
+    "pan": {
+        "mode": "mock",
+        "db": {
+            "server": "devdb08"
+        }
+    },
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        }
+    },
+    "console": {
+        "server": {
+            "host": "0.0.0.0",
+            "port": 30045
+        }
+    },
+    "stdOut": {
+        "mode": "dev"
+    },
+    "log": {
+        "streams": [{
+            "level": "trace",
+            "stream": "../logRotateStream",
+            "streamConfig": {
+                "path": "ut5_%Y-%m-%d.log",
+                "symlink": "ut5.log",
+                "compress": true
+            }
+        }, {
+            "level": "error",
+            "stream": "../sentryStream",
+            "streamConfig": {
+                "dsn": "http://c1f4edbca29d4c8691fd4c20fdcd071f:1921e61df83544be95e31366bf84650c@sentry:5002/2",
+                "patchGlobal": false,
+                "logger": "impl-standard"
+            },
+            "type": "raw"
+        }]
+    },
+    "masterBus": {
+        "logLevel": "debug",
+        "socket": "standard-service"
+    },
+    "workerBus": {
+        "logLevel": "debug"
+    },
+    "httpserverAdministration": {
+        "packer": {
+            "hotReload": true,
+            "translate": "./public/messages.en.po",
+            "name": "webpack"
+        }
+    },
+    "httpserverService": {
+        "packer": {
+            "hotReload": true,
+            "translate": "./public/messages.en.po",
+            "name": "webpack"
+        }
+    },
+    "masterCryptKey": "769977E7018D5AA9D60C79AFA11BA4520FD1CE0D2D24A7A978A28236563F6695",
+    "t24/senegal": {
+        "host": "172.31.80.137",
+        "port": 9970,
+        "externalResponseCodesToCodeType": {
+            "-32031": "wrongUsername",
+            "-32032": "wrongPassword"
+        },
+        "language": {},
+        "logLevel": "error"
+    },
+    "mirrors": {
+        "url": "http://192.168.132.20/Mirrorsapi/",
+         "uriMap": {
+            "mirrors.viewReport": "/api/documentviewer",
+            "mirrors.getReport": "/api/reports"
+        }
+    },
+    "alert": {
+        "push": {
+            "deviceOSToProvider": {
+                "android": "firebase"
+            }
+        },
+        "ports": {
+            "email": {
+                "channel": "email"
+            },
+            "firebase" : {
+                "channel": "push"
+            }
+        }
+    },
+    "firebase": {
+        "apiKey": "AAAAzS-tQPM:APA91bHoVcdY-QYDpRniu3zA2WZwB6lXB0uun8tsShp4MjBrABdo5vcrGUp0dhmutSiZ_NltphZgH1m9krCqJRqCseLS2xrwG_wPakg-38lpQ_utpwttWvHOJBcKotcvOgJeuVcKhQCP"
+    },
+    "email": {
+        "from": "email.address@softwaregroup-bg.com",
+        "url": "smtp://smtp.gmail.com",
+        "service": "gmail",
+        "settings": {
+            "auth": {
+                "user": "sgteamtux@gmail.com",
+                "pass": "hgyuI^G*g87"
+            }
+        },
+        "logLevel": "error"
+    },
+    "bio": {
+        "logLevel": "trace",
+        "requestTimeout": 60000,
+        "_url": "http://www.mocky.io",
+        "url": "https://192.168.132.20:9050",
+        "uriMap": {
+            "_bio.add": "/v2/57568b980f000059142effc4",
+            "_bio.check": "/v2/57568bb70f00005a142effc5",
+            "bio.add": "/fingerprint/add",
+            "bio.check": "/fingerprint/check"
+        }
+    },
+    "cron": {
+        "logLevel": "trace",
+        "jobsList": {
+            "test": {
+                "opcode": "test",
+                "pattern": "00 */1 * * * *"
+            }
+        }
+    },
+    "_comment_access": "Ranges are in DECIMAL format. String format is also accepted, however an additinal parsing would be performed which will reduce performace.",
+    "_comment_access_range1": "0.0.0.0 - 0.255.255.255 used for broadcast messages to the current",
+    "_comment_access_range2": "192.88.99.0 - 192.88.99.255 used by 6to4 anycast relays",
+    "_comment_access_range3": "224.0.0.0 - 239.255.255.255 reserved for multicas",
+    "_comment_access_range4": "240.0.0.0 - 255.255.255.255 reserved for future use/Reserved for the 'limited broadcast' destination address",
+    "access": {
+        "restrictions": {
+            "ipRanges": [
+                { "start": 0, "end": 16777215 },
+                { "start": 3227017984, "end": 3227018239 },
+                { "start": 3758096384, "end": 4026531839 },
+                { "start": 4026531840, "end": 4294967295 }
+            ]
+        }
+    },
+    "push": {
+        "firebase" : {
+            "apiKey": "AAAAzS-tQPM:APA91bHoVcdY-QYDpRniu3zA2WZwB6lXB0uun8tsShp4MjBrABdo5vcrGUp0dhmutSiZ_NltphZgH1m9krCqJRqCseLS2xrwG_wPakg-38lpQ_utpwttWvHOJBcKotcvOgJeuVcKhQCP",
+            "baseUrl": "https://fcm.googleapis.com",
+            "endpoints": {
+                "send": "/fcm/send"
+            }
+        }
+    },
+    "mymbs": {
+        "mock": false,
+        "url": "http://localhost:8008/",
+        "method": "get"
+    }
+}

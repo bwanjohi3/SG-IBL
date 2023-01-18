@@ -1,0 +1,40 @@
+.detailsDialog {
+    min-width: 1060px;
+}
+.empty {
+    height: 50px;
+}
+.rowPaddings {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.borderBottom {
+    border-bottom: 1px solid #E6E6E6;
+}
+.readonly input{
+    background-color: #F5F5F5;
+}
+
+.editable .input {
+    background-color: #FFFFFF;
+}
+
+.cassetteCurrency, .cassetteDenomination{
+    float: left;
+}
+.cassetteCurrency{
+    width: 300px;
+    padding-right: 10px;
+}
+.branch{
+    width: 500px;
+}
+.cassetteDenomination{
+    width: 170px;
+}
+.cassetteDenomination input {
+    text-align: right;
+}

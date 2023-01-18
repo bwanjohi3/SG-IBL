@@ -1,0 +1,36 @@
+{
+  "implementation": "administration",
+  "repl": false,
+  "console": false,
+  "log": false,
+  "debug": true,
+  "masterBus": {
+    "logLevel": "trace",
+    "socket": false
+  },
+  "workerBus": {
+    "logLevel": "trace"
+  },
+  "backend": {
+    "logLevel": "trace",
+    "uri": "/rpc",
+    "method": "post",
+    "parseResponse": false,
+    "_bio.scan": {
+        "http:" : {
+          "url": "http://127.0.0.1:33",
+          "uri": "/UTFingerprint/web/Scan"
+        },
+        "https:" : {
+          "__comment_old_url": "https://127.0.0.1:35",
+          "__comment_old_uri": "/UTFingerprint/api/scan",
+          "url": "http://127.0.0.1:33",
+          "uri": "/UTFingerprint/web/Scan"
+        },
+        "payload": {"params": {"timeout": 15}}
+    },
+    "raw":{
+      "json":true
+    }
+  }
+}

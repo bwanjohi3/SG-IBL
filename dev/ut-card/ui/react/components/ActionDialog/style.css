@@ -1,0 +1,55 @@
+.titleWrap {
+    text-align: center !important;
+    background-color: #F5F5F5 !important;
+    border-bottom: 1px solid #D7D6D6 !important;
+    padding: 5px 0 !important;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.bodyWrap {
+    padding: 0 !important;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerWrap {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.mainContent {
+    width: 95%;
+    margin: 25px auto;
+}
+.actionDialogButton {
+    margin-right: 5px;
+}
+
+ /*use this when styling custom dialogs*/
+.actionButtons {
+    border-top: 1px solid #D7D6D6 !important;
+    background-color: #F5F5F5 !important;
+    padding: 5px !important;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 17px;
+    height: 17px;
+    background: url('./images/closeTab.png') no-repeat center;
+    background-size: 9px 9px;
+    background-color: transparent;
+    transition: background-color .3s;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.closeBtn:hover {
+    background: url('./images/closeTabHover.png') no-repeat center; 
+    background-color: #E5E5E5;
+}

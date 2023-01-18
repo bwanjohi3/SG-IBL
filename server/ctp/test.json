@@ -1,0 +1,32 @@
+{
+    "implementation": "standard",
+    "masterBus": {
+        "socket": "standard-pan",
+        "socketPid": true
+    },
+    "debug": true,
+    "payshield": {
+        "host": "192.168.129.155",
+        "port": 9998,
+        "format": {
+            "messageFormat": {
+                "_generateMac": {
+                    "responsePattern": "errorCode:2/string, pad:4/string, mac:8/string"
+                }
+            }
+        }
+    },
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        }
+    },
+    "log": false,
+    "repl": false,
+    "ctp": {
+        "port": 0
+    },
+    "console": false
+}

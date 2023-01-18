@@ -1,0 +1,50 @@
+{
+    "implementation": "standard",
+    "masterBus": {
+        "socket": "standard-ctp"
+    },
+    "debug": true,
+    "payshield": {
+        "host": "192.168.133.9",
+        "port": 1506,
+        "format": {
+            "messageFormat": {
+                "_generateMac": {
+                    "responsePattern": "errorCode:2/string, pad:4/string, mac:8/string"
+                }
+            }
+        }
+    },
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        }
+    },
+    "log": {
+        "streams": [
+            {
+                "level": "trace",
+                "stream": "../logRotateStream",
+                "streamConfig": {
+                    "path": "pan_%Y-%m-%d.log",
+                    "symlink": "pan.log",
+                    "compress": true
+                }
+            }
+        ]
+    },
+    "repl": false,
+    "ctp": {
+        "port": 8009
+    },
+    "console": {
+        "server": {
+            "host": "0.0.0.0",
+            "port": 38009
+        },
+        "host": "127.0.0.1",
+        "port": 38009
+    }
+}

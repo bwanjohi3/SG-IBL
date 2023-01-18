@@ -1,0 +1,1 @@
+DROP SYNONYM [integration].[vCard] CREATE SYNONYM [integration].[vCard] FOR [card].[vCard]

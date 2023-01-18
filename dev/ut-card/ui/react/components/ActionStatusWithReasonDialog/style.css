@@ -1,0 +1,14 @@
+.rejectContent>div, .allocationContent>div {
+    padding: 5px;
+}
+.rejectContent textarea {
+    max-height: 80px;
+    width: 70%;
+}
+.headerWrap {
+    text-align: center;
+}
+.contentWrap {
+    width: 70%;
+    margin-left: 15%;
+}

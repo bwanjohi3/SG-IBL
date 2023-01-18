@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-ctp-aptra@^6.1.0",
+        "scope": null,
+        "escapedName": "ut-ctp-aptra",
+        "name": "ut-ctp-aptra",
+        "rawSpec": "^6.1.0",
+        "spec": ">=6.1.0 <7.0.0",
+        "type": "range"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp"
+    ]
+  ],
+  "_from": "ut-ctp-aptra@>=6.1.0 <7.0.0",
+  "_id": "ut-ctp-aptra@6.2.1",
+  "_inCache": true,
+  "_location": "/ut-ctp-aptra",
+  "_nodeVersion": "6.9.5",
+  "_npmUser": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ut-ctp-aptra@^6.1.0",
+    "scope": null,
+    "escapedName": "ut-ctp-aptra",
+    "name": "ut-ctp-aptra",
+    "rawSpec": "^6.1.0",
+    "spec": ">=6.1.0 <7.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/ut-ctp"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-ctp-aptra/-/ut-ctp-aptra-6.2.1.tgz",
+  "_shasum": "4b264567aba2897dc9b498a5a7c003da4753caf0",
+  "_shrinkwrap": null,
+  "_spec": "ut-ctp-aptra@^6.1.0",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp",
+  "author": "",
+  "dependencies": {
+    "lodash.assign": "4.2.0",
+    "ut-codec-jsonrpc": "^6.2.0",
+    "ut-codec-ndc": "^6.1.4",
+    "ut-error": "^5.4.9"
+  },
+  "description": "Card transactions pre-processing module for APTRA NDC",
+  "devDependencies": {
+    "joi": "10.0.6",
+    "ut-run": "^9.0.0-ut6.5",
+    "ut-tools": "^5.26.0"
+  },
+  "dist": {
+    "shasum": "4b264567aba2897dc9b498a5a7c003da4753caf0",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-ctp-aptra/-/ut-ctp-aptra-6.2.1.tgz"
+  },
+  "gitHead": "6f55feb0a38513329db68c4653d3a3eb23cb4396",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "ut-ctp-aptra",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "ut-bus": "^6.0.0-ut6.1",
+    "ut-port-httpserver": "^9.0.0-ut6.2",
+    "ut-port-script": "^6.0.0-ut6.3",
+    "ut-port-tcp": "^6.0.0-ut6.5"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwaregroup-bg.com/repository/npm-internal"
+  },
+  "readme": "# Card transactions pre-processing module for APTRA NDC\n\n## Scope\n\n1. Proxy the communications with APTRA Advance NDC based ATM\n   * Map between card and card ID - full card number will never go to or come from other modules\n   * PIN verification - as card number is needed for PIN verification, the verification should happen within this module\n   * Handle functionality related to TAK, TPK, MAC\n\n## Public API\n\nThe module exposes the following methods:\n\n### ```ncr.goOutOfService({conId})``` - sets an ATM to out of service mode\n\n* ```conId``` - identifies the ATM connection\n\n### ```ncr.goInService({conId})``` - sets an ATM to in service mode\n\n* ```conId``` - identifies the ATM connection\n\n### ```ncr.keyChangeTak({conId, tmk})``` - generate and set a new Terminal Authentication Key (TAK) for the ATM\n\n* ```conId``` - identifies the ATM connection\n* ```tmk``` - the terminal master key of the ATM\n\n### ```ncr.keyChangeTpk({conId, tmk})``` - generate and set a new Terminal PIN Key (TPK) for the ATM\n\n* ```conId``` - identifies the ATM connection\n* ```tmk``` - the terminal master key of the ATM\n\n### ```atmAgent.restartMachine({terminalId})``` - restart the АТМ through agent\n\n* ```terminalId``` - database key in the atm.terminal table\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.softwaregroup-bg.com:ut5/ut-ctp-aptra.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.2.1"
+}

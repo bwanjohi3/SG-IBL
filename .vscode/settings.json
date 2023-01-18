@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "vscode-mssql.connections":
+    [
+        {
+            "server": "devdb08",
+            "database": "impl-standard-elin.angelov",
+            "user": "elin.angelov.standard",
+            "password": "123"
+        },
+        {
+            "server": "devdb08",
+            "database": "impl-standard-elin.angelov",
+            "user": "ut5",
+            "password": "ut5"
+        }
+    ],
+    "terminal.integrated.scrollback": 1000000
+}

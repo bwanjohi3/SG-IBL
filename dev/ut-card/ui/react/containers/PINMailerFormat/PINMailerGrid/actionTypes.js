@@ -1,0 +1,23 @@
+// PINMailerGrid
+export const FETCH = Symbol('FETCH');
+export const SAVE = Symbol('SAVE');
+export const SET_EDIT_CELL = Symbol('SET_EDIT_CELL');
+export const SET_DATA_FIELD = Symbol('SET_DATA_FIELD');
+export const HANDLE_CONTINUOUS_PAPER_CLICK = Symbol('HANDLE_CONTINUOUS_PAPER_CLICK');
+export const SET_CONTINUOUS_PAPER_VALUE = Symbol('SET_CONTINUOUS_PAPER_VALUE');
+export const SET_PRINT_FORMAT_STRING = Symbol('SET_PRINT_FORMAT_STRING');
+export const SET_PRINT_FORMAT_STRING_FROM_DB = Symbol('SET_PRINT_FORMAT_STRING_FROM_DB');
+export const SET_VERTICAL_DATA = Symbol('SET_VERTICAL_DATA');
+// PINMailerFieldSelector
+export const OPEN_FIELD_SELECTOR = Symbol('OPEN_FIELD_SELECTOR');
+export const CLOSE_FIELD_SELECTOR = Symbol('CLOSE_FIELD_SELECTOR');
+export const FIELD_SELECTOR_SELECTION_CHANGE = Symbol('FIELD_SELECTOR_SELECTION_CHANGE');
+export const SET_GRID_FIELDS = Symbol('SET_GRID_FIELDS');
+export const SET_GRID_DATA = Symbol('SET_GRID_DATA');
+export const SET_SELECTED_DATA = Symbol('SET_SELECTED_DATA');
+export const SET_MAILER_WIDTH = Symbol('SET_MAILER_WIDTH');
+export const SET_MAILER_HEIGHT = Symbol('SET_MAILER_HEIGHT');
+export const SET_ERRORS = Symbol('SET_ERRORS');
+// confirmation dialog
+export const OPEN_CONFIRMATION_DIALOG = Symbol('OPEN_CONFIRMATION_DIALOG');
+export const CLOSE_CONFIRMATION_DIALOG = Symbol('CLOSE_CONFIRMATION_DIALOG');

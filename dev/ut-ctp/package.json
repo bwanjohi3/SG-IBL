@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-ctp@5.19.2",
+        "scope": null,
+        "escapedName": "ut-ctp",
+        "name": "ut-ctp",
+        "rawSpec": "5.19.2",
+        "spec": "5.19.2",
+        "type": "version"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard"
+    ]
+  ],
+  "_from": "ut-ctp@5.19.2",
+  "_id": "ut-ctp@5.19.2",
+  "_inCache": true,
+  "_location": "/ut-ctp",
+  "_nodeVersion": "6.9.5",
+  "_npmUser": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ut-ctp@5.19.2",
+    "scope": null,
+    "escapedName": "ut-ctp",
+    "name": "ut-ctp",
+    "rawSpec": "5.19.2",
+    "spec": "5.19.2",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-ctp/-/ut-ctp-5.19.2.tgz",
+  "_shasum": "16ca0f75d504b778fc96f801f329e9bd88edc69f",
+  "_shrinkwrap": null,
+  "_spec": "ut-ctp@5.19.2",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard",
+  "author": "",
+  "dependencies": {
+    "ut-ctp-aptra": "^6.1.0",
+    "ut-ctp-iso": "^6.1.0",
+    "ut-ctp-pan": "^6.1.0",
+    "ut-ctp-payshield": "^6.1.0",
+    "ut-ctp-ped": "^6.1.0"
+  },
+  "description": "Card transactions pre-processing module",
+  "devDependencies": {
+    "ut-tools": "5.23.2"
+  },
+  "dist": {
+    "shasum": "16ca0f75d504b778fc96f801f329e9bd88edc69f",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-ctp/-/ut-ctp-5.19.2.tgz"
+  },
+  "gitHead": "5f32bfdfb6e8b37d6333ce8f358686bfdba54814",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "ut-ctp",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "ut-bus": "^5.17.0",
+    "ut-port-httpserver": "^8.17.0",
+    "ut-port-jsonrpc": "^5.6.12",
+    "ut-run": "^8.4.0"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwaregroup-bg.com/repository/npm-internal"
+  },
+  "readme": "# Card transactions pre-processing module (ut-ctp)\n\n## Scope\n\n1. Implement the communication with PayShield 9000 HSM\n   * PIN verification\n   * PIN translation\n   * PIN deriving\n   * PIN mailer printing\n   * TPK generation\n   * TAK generation\n   * MAC generation\n   * MAC verification\n   * ZPK import\n   * ZPK generation\n1. Proxy the communications with APTRA Advance NDC based ATM\n   * Map between card and card ID - full card number will never go to or come from other modules\n   * PIN verification - as card number is needed for PIN verification, the verification should happen within this module\n   * Handle functionality related to TAK, TPK, MAC\n1. Proxy the communications with ISO8583 based switch\n   * Map between card and card ID - full card number will never go to or come from other modules\n   * PIN verification\n   * Handle functionality related to ZPK, MAC\n1. Proxy the communications with ISO8583 based POS\n   * Map between card and card ID - full card number will never go to or come from other modules\n   * PIN verification\n   * Handle functionality related to TAK, TPK, MAC\n1. Implement card management functions that depend on card number\n   * Card number generation\n   * Export of files used for card production\n1. Handle mapping between card and card ID in import / export scenarios related to transaction reconciliation\n\n## Component diagram\n\nCTP module uses a number of components, including ones from other modules, so that it can pre-process and post-process transactions related to ATM, ISO8583 POS/switch and PIN entry device (PED). The purpose of pre-processing is to remove or encrypt sensitive cardholder data, such as card number and convert PIN block to PIN offset. The purpose of post-processing is to decrypt what was encrypted during pre-processing, do PIN translation and route the response to the proper channel and terminal. The pre-processing and post-processing happens in a separate service - CTP service, while the rest of the logic is happening in another service - Flow service. The following diagram shows how the different components interact. In the diagram, the single CTP service is shown twice, to distinguish the pre-processing and post-processing and to avoid putting too many components in a single place.\n\n![component diagram](doc/diagram/component.png)\n\n## Withdraw sequence diagram\n![withdraw sequence diagram](doc/diagram/withdraw.png)\n\n## Public API\n\nThe CTP module is meant to be run as a separate service for each channel/device type it handles, using the following pattern:\n\n```js\nrequire('ut-ctp/run')({\n    type: 'ncr', // the type of channel/device to handle\n    app: 'server/ncr', // path to configuration folder\n    env: 'prod' // environment\n});\n```\n\nCTP module exposes the following methods through RPC server interface:\n\n### ```ncr.goOutOfService({conId})``` - sets an ATM to out of service mode\n\n* ```conId``` - identifies the ATM connection\n\n### ```ncr.goInService({conId})``` - sets an ATM to in service mode\n\n* ```conId``` - identifies the ATM connection\n\n### ```ncr.keyChangeTak({conId, tmk})``` - generate and set a new Terminal Authentication Key (TAK) for the ATM\n\n* ```conId``` - identifies the ATM connection\n* ```tmk``` - the terminal master key of the ATM\n\n### ```ncr.keyChangeTpk({conId, tmk})``` - generate and set a new Terminal PIN Key (TPK) for the ATM\n\n* ```conId``` - identifies the ATM connection\n* ```tmk``` - the terminal master key of the ATM\n\n### ```atmAgent.restartMachine({terminalId})``` - restart the АТМ through agent\n\n* ```terminalId``` - database key in the atm.terminal table\n\n### ```pan.number.generate({panLength, count, checkSum, start, prefix, cipher})``` - generate, encrypt and store a sequence of card numbers\n\n* ```panLength``` - length of the card number\n* ```start``` - start value of the sequence\n* ```count``` - count to generate\n* ```checkSum``` - check sum algorithm to use; pass 'luhn' or true to use Luhn algorithm\n* ```prefix``` - card number prefix\n* ```cipher``` - encryption algorithm\n\n### ```pan.number.encrypt({card})``` - encrypt a card number\n\n* ```card``` - card number to encrypt\n\n### ```pan.generateAndPrintPin.list({pans, pinLength, pinMailerFormat})``` - generate PINs and print them on print mailers\n\n* ```pans``` - array of {pan, cipher, pvk, decimalisation} objects, holding encrypted card data\n* ```pinLength``` - length of the generated PINs\n* ```pinMailerFormat``` - PIN mailer format to pass to the HSM\n\n### ```pan.generateCvv.list(pans)``` - generate CVV for list of cards\n\n* ```pans``` - array of {cardId, pan, cipher, cvk, expirationDate, serviceCode, cvv1, cvv2, icvv, cavv,pvk,decimalisation} objects, holding encrypted card data and flags (cvv1, cvv2, icvv, cavv) indicating withc CVV to generate\n\n### ```pan.production.map({file})``` - decrypt fields in a card production file and save result in temp file\n\n* ```file``` - file name of the card production file\n\n### ```pan.key.encrypt({key, cipher})``` - encrypt a key\n\n* ```key``` - key to encrypt\n* ```cipher``` - cipher to use\n\n### ```pan.generateThreeComponentZmk({component1, component2, component3})``` - form a Zone Master Key(ZMK) from clear components\n\n* ```component1```, ```component2```, ```component3``` - clear components to use\n\n### ```pan.genKey({mode, keyType, keyScheme, keyZmkTmkFlag, keyZmkTmk, keyScheme1, cipher})``` - generate key at the HSM\n\n* ```mode``` - see HSM docs\n* ```keyType``` - see HSM docs\n* ```keyScheme``` - see HSM docs\n* ```keyZmkTmkFlag``` - see HSM docs\n* ```keyZmkTmk``` - see HSM docs\n* ```keyScheme1``` - see HSM docs\n* ```cipher``` - cipher to use when encrypting the resulting key\n\n### ```pan.genKcv({kcvType, key, cipher})``` - generate key check value\n\n* ```kcvType``` - see HSM docs\n* ```key``` - see HSM docs (encrypted)\n* ```cipher``` - cipher used for encrypting key field\n\n### ```pan.generateArqc({modeFlag, schemeId, mkac, ivac, panSeqNo, branchHeightParams, atc, transactionData, arqc, arc, csu, pad})``` - generate response cryptoram\n\n* ```modeFlag``` - see HSM docs\n* ```schemeId``` - see HSM docs\n* ```mkac``` - see HSM docs\n* ```ivac``` - see HSM docs\n* ```panSeqNo``` - see HSM docs\n* ```branchHeightParams``` - see HSM docs\n* ```atc``` - see HSM docs\n* ```transactionData``` - see HSM docs\n* ```arqc``` - see HSM docs\n* ```arc``` - see HSM docs\n* ```csu``` - see HSM docs\n* ```pad``` - see HSM docs\n\n### ```pan.translateBdkZmkLmk({zmk, bdk})``` -\n\n* ```zmk``` -\n* ```bdk``` -\n\n### ```pan.translateBdkLmkZmk({zmk, bdk})``` -\n\n* ```zmk``` -\n* ```bdk``` -\n\n### ```pan.importKey({keyType, zmk, keyA32, keyScheme})``` - import a key\n\n* ```keyType``` - see HSM docs\n* ```zmk``` - see HSM docs\n* ```keyA32``` - see HSM docs\n* ```keyScheme``` - see HSM docs\n\n### ```iso.0200(msg)``` - send ISO8583 message 0200\n\n* ```msg``` - object, that contains ISO8583 fields (data elements) as properties\n\n## Private API\n\n### ```pan.offset.get({track2, pinKey, pinBlock, pinBlockNew, keyType})``` - lookup card, calculate PIN offset and encrypt sensitive fields\n\n* ```track2``` -\n* ```pinKey``` -\n* ```pinBlock``` -\n* ```pinBlockNew``` -\n* ```keyType``` -\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.softwaregroup-bg.com:ut5/ut-ctp.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "5.19.2"
+}

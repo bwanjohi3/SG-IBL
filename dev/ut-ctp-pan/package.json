@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-ctp-pan@^6.1.0",
+        "scope": null,
+        "escapedName": "ut-ctp-pan",
+        "name": "ut-ctp-pan",
+        "rawSpec": "^6.1.0",
+        "spec": ">=6.1.0 <7.0.0",
+        "type": "range"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp"
+    ]
+  ],
+  "_from": "ut-ctp-pan@>=6.1.0 <7.0.0",
+  "_id": "ut-ctp-pan@6.2.4",
+  "_inCache": true,
+  "_location": "/ut-ctp-pan",
+  "_nodeVersion": "6.9.5",
+  "_npmUser": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "through": "2.3.8"
+  },
+  "_requested": {
+    "raw": "ut-ctp-pan@^6.1.0",
+    "scope": null,
+    "escapedName": "ut-ctp-pan",
+    "name": "ut-ctp-pan",
+    "rawSpec": "^6.1.0",
+    "spec": ">=6.1.0 <7.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/ut-ctp"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-ctp-pan/-/ut-ctp-pan-6.2.4.tgz",
+  "_shasum": "f01551c410023f6d26832641b647d6dd34e73157",
+  "_shrinkwrap": null,
+  "_spec": "ut-ctp-pan@^6.1.0",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp",
+  "author": "",
+  "dependencies": {
+    "lodash.assign": "4.2.0",
+    "split": "1.0.1",
+    "through2": "2.0.3",
+    "ut-error": "^5.4.9"
+  },
+  "description": "Card transactions pre-processing module for cardholder data encryption",
+  "devDependencies": {
+    "joi": "10.0.6",
+    "ut-tools": "^5.26.0"
+  },
+  "dist": {
+    "shasum": "f01551c410023f6d26832641b647d6dd34e73157",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-ctp-pan/-/ut-ctp-pan-6.2.4.tgz"
+  },
+  "gitHead": "60055b50f303911a0406117d111469ffa60a4933",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "ut-ctp-pan",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "ut-bus": "^6.0.0-ut6.1",
+    "ut-port-script": "^6.0.0-ut6.3"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwaregroup-bg.com/repository/npm-internal"
+  },
+  "readme": "# Card transactions pre-processing module for cardholder data encryption\n\n## Scope\n\n1. Implement card management functions that depend on card number\n   * Card number generation\n   * Export of files used for card production\n1. Handle mapping between card and card ID in import / export scenarios related to transaction reconciliation\n\n## Public API\n\nThe module exposes the following methods:\n\n### ```pan.number.generate({panLength, count, checkSum, start, prefix, cipher})``` - generate, encrypt and store a sequence of card numbers\n\n* ```panLength``` - length of the card number\n* ```start``` - start value of the sequence\n* ```count``` - count to generate\n* ```checkSum``` - check sum algorithm to use; pass 'luhn' or true to use Luhn algorithm\n* ```prefix``` - card number prefix\n* ```cipher``` - encryption algorithm\n\n### ```pan.number.encrypt({card})``` - encrypt a card number\n\n* ```card``` - card number to encrypt\n\n### ```pan.generateAndPrintPin.list({pans, pinLength, pinMailerFormat})``` - generate PINs and print them on print mailers\n\n* ```pans``` - array of {pan, cipher, pvk, decimalisation} objects, holding encrypted card data\n* ```pinLength``` - length of the generated PINs\n* ```pinMailerFormat``` - PIN mailer format to pass to the HSM\n\n### ```pan.generateCvv.list(pans)``` - generate CVV for list of cards\n\n* ```pans``` - array of {cardId, pan, cipher, cvk, expirationDate, serviceCode, cvv1, cvv2, icvv, cavv} objects, holding encrypted card data and flags (cvv1, cvv2, icvv, cavv) indicating withc CVV to generate\n\n### ```pan.production.map({file})``` - decrypt fields in a card production file and save result in temp file\n\n* ```file``` - file name of the card production file\n\n### ```pan.key.encrypt({key, cipher})``` - encrypt a key\n\n* ```key``` - key to encrypt\n* ```cipher``` - cipher to use\n\n### ```pan.generateThreeComponentZmk({component1, component2, component3})``` - form a Zone Master Key(ZMK) from clear components\n\n* ```component1```, ```component2```, ```component3``` - clear components to use\n\n### ```pan.genKey({mode, keyType, keyScheme, keyZmkTmkFlag, keyZmkTmk, keyScheme1, cipher})``` - generate key at the HSM\n\n* ```mode``` - see HSM docs\n* ```keyType``` - see HSM docs\n* ```keyScheme``` - see HSM docs\n* ```keyZmkTmkFlag``` - see HSM docs\n* ```keyZmkTmk``` - see HSM docs\n* ```keyScheme1``` - see HSM docs\n* ```cipher``` - cipher to use when encrypting the resulting key\n\n### ```pan.genKcv({kcvType, key, cipher})``` - generate key check value\n\n* ```kcvType``` - see HSM docs\n* ```key``` - see HSM docs (encrypted)\n* ```cipher``` - cipher used for encrypting key field\n\n### ```pan.generateArqc({modeFlag, schemeId, mkac, ivac, panSeqNo, branchHeightParams, atc, transactionData, arqc, arc, csu, pad})``` - generate response cryptoram\n\n* ```modeFlag``` - see HSM docs\n* ```schemeId``` - see HSM docs\n* ```mkac``` - see HSM docs\n* ```ivac``` - see HSM docs\n* ```panSeqNo``` - see HSM docs\n* ```branchHeightParams``` - see HSM docs\n* ```atc``` - see HSM docs\n* ```transactionData``` - see HSM docs\n* ```arqc``` - see HSM docs\n* ```arc``` - see HSM docs\n* ```csu``` - see HSM docs\n* ```pad``` - see HSM docs\n\n### ```pan.translateBdkZmkLmk({zmk, bdk})``` -\n\n* ```zmk``` -\n* ```bdk``` -\n\n### ```pan.translateBdkLmkZmk({zmk, bdk})``` -\n\n* ```zmk``` -\n* ```bdk``` -\n\n### ```pan.importKey({keyType, zmk, keyA32, keyScheme})``` - import a key\n\n* ```keyType``` - see HSM docs\n* ```zmk``` - see HSM docs\n* ```keyA32``` - see HSM docs\n* ```keyScheme``` - see HSM docs\n\n## Private API\n\n### ```pan.offset.get({track2, pinKey, pinBlock, pinBlockNew, keyType})``` - lookup card, calculate PIN offset and encrypt sensitive fields\n\n* ```track2``` -\n* ```pinKey``` -\n* ```pinBlock``` -\n* ```pinBlockNew``` -\n* ```keyType``` -\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.softwaregroup-bg.com:ut5/ut-ctp-pan.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.2.4"
+}

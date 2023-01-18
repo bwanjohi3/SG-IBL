@@ -1,0 +1,13 @@
+/*
+Clear component: 617C F443 61C7 46D5 BFFE EC25 68F7 B964
+Encrypted component: U5769 5F56 FE9C 5866 5D2C 089C 475E F292
+Key check value: BD8351
+
+Clear component: 400B A4A2 F7DF 1C3B 9B32 D53B 3825 E5EC
+Encrypted component: UFF07 05E8 A302 6D2B 0F80 7730 FF6F 273E
+Key check value: 0FAF05
+
+
+Encrypted key: UAB09 AFAE B2EF 42EC 0BA3 668A DB54 BDAD
+Key check value: 4D65C8
+*/

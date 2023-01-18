@@ -1,0 +1,10 @@
+export const fetchRules = Symbol.for('fetchRules');
+export const fetchOrganizations = Symbol.for('fetchOrganizations');
+export const fetchRoles = Symbol.for('fetchRoles');
+export const fetchSupervisor = Symbol.for('fetchSupervisor');
+export const removeRules = Symbol.for('removeRules');
+export const editRule = Symbol.for('editRule');
+export const addRule = Symbol.for('addRule');
+export const fetchNomenclatures = Symbol.for('fetchNomenclatures');
+export const reset = Symbol.for('reset');
+export const updatePagination = Symbol.for('updatePagination');

@@ -1,0 +1,6 @@
+export const FETCH_APPLICATIONS = Symbol('FETCH_APPLICATIONS');
+export const SET_VISIBLE_COLUMNS = Symbol('SET_VISIBLE_COLUMNS');
+export const TOGGLE_VISIBLE_COLUMN = Symbol('TOGGLE_VISIBLE_COLUMN');
+export const CHECK_APPLICATION = Symbol('CHECK_APPLICATION');
+export const MULTI_CHECK = Symbol('MULTI_CHECK');
+export const REFETCH = Symbol('REFETCH');

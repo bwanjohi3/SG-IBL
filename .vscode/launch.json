@@ -1,0 +1,387 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "tools",
+            "type": "node",
+            "request": "launch",
+            "protocol-": "inspector",
+            "program": "${workspaceRoot}/dev/ut-tools/bin/ut-release.js",
+            "cwd": "${workspaceRoot}/dev/ut-core",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "console-": "externalTerminal"
+        },
+        {
+            "name": "Admin dev",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/index.js",
+            "stopOnEntry": false,
+            "args": [
+                "--db.db.encryptionPass=dfgnYLadcJvJaegN$67@!(2"
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": "${workspaceRoot}/node-v8/node",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/admin",
+                "UT_ENV": "dev",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null,
+            "outputCapture": "std",
+            "protocol": "inspector"
+        },
+        {
+            "name": "Solution dev",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/index.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/solution",
+                "UT_ENV": "dev",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "Service dev",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/index.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/service",
+                "UT_ENV": "dev",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "bio",
+            "type": "node",
+            "request": "launch",
+            "protocol-": "inspector",
+            "program": "${workspaceRoot}/index.js",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/bio",
+                "UT_ENV": "dev",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "console-": "externalTerminal"
+        },
+        {
+            "name": "atm flow",
+            "type": "node",
+            "request": "launch",
+            "protocol-": "inspector",
+            "program": "${workspaceRoot}/index.js",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/flow",
+                "UT_ENV": "dev",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null,
+            "outputCapture": "std",
+            "protocol": "inspector"        },
+        {
+            "name": "pos",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/index-pos.js",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/pos",
+                "UT_ENV": "dev",
+                "CTP_APP": "pos",
+                "NODE_PATH": "${workspaceRoot}/dev"
+            },
+            "linux": {
+                "outputCapture": "std",
+                "protocol": "inspector"
+            },
+            "outputCapture": "std",
+            "protocol": "inspector"
+        },
+        {
+            "name": "pan",
+            "type": "node",
+            "request": "launch",
+            "protocol-": "inspector",
+            "program": "${workspaceRoot}/index-pan.js",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/ctp",
+                "UT_ENV": "dev",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "console-": "externalTerminal"
+        },
+        {
+            "name": "ncr uat",
+            "type": "node",
+            "request": "launch",
+            "protocol-": "inspector",
+            "program": "${workspaceRoot}/index-ncr.js",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/ncr",
+                "UT_ENV": "uat",
+                "CTP_APP": "ncr",
+                "NODE_PATH": "${workspaceRoot}/dev"
+            },
+            "console-": "externalTerminal"
+        },
+        {
+            "name": "ctp",
+            "type": "node",
+            "request": "launch",
+            "protocol-": "inspector",
+            "program": "${workspaceRoot}/index-ctp.js",
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/ctp",
+                "UT_ENV": "dev",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null,
+            "outputCapture": "std",
+            "protocol": "inspector" 
+        },
+        {
+            "name": "Admin uat",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/index.js",
+            "stopOnEntry": false,
+            "args": [
+                "--db.db.encryptionPass=dfgnYLadcJvJaegN$67@!(2"
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_APP": "server/admin",
+                "UT_ENV": "uat",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "uat-no-dev",
+            "type": "node2",
+            "request": "launch",
+            "program": "${workspaceRoot}/",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_ENV": "uat"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/blue-tape/bin/blue-tape.js",
+            "stopOnEntry": false,
+            "args": ["test/integration/start.js", "test/integration/test.card.fetchReason.js", "test/integration/stop.js", "--db.db.encryptionPass=dfgnYLadcJvJaegN$67@!(2"],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_ENV": "test",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "sourceMaps": false
+        },
+        {
+            "name": "Launch multiple stdr tap",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/tap/bin/run.js", // D:/ut5/impl-standard/node_modules/bogota/bin/cmd.js
+            "stopOnEntry": false,
+            "args": [
+                "-J",
+                "-T",
+                "--node-arg=--preserve-symlinks",
+                "test/integration/parallel/card2"
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "UT_ENV": "test",
+                "NODE_PATH": "${workspaceRoot}/dev"
+            },
+            "sourceMaps": false
+        },
+        {
+            "name": "db",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/test/integration/db.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_ENV": "test",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            "console": "externalTerminal",
+            "sourceMaps": false
+        },
+        {
+            "name": "single test",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/test/integration/parallel/card2/test.card.activateDeactivateProduct.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--preserve-symlinks",
+                "--nolazy",
+                "--max_old_space_size=500000"
+            ],
+            "env": {
+                "UT_ENV": "test",
+                "NODE_PATH": "${workspaceRoot}/dev/"
+            },
+            // "console": "externalTerminal",
+            "sourceMaps": false
+        }
+    ],
+    "compounds": [
+        {
+            "name": "dev: Admin + Solution",
+            "configurations": [
+                "Admin dev",
+                "Solution dev"
+            ]
+        },
+        {
+            "name": "dev: Admin + Bio",
+            "configurations": [
+                "Admin dev",
+                "bio"
+            ]
+        },
+        {
+            "name": "dev: flow ctp",
+            "configurations": [
+                "atm flow",
+                "ctp"
+            ]
+        },
+        {
+            "name": "dev: flow ctp admin",
+            "configurations": [
+                "atm flow",
+                "ctp",
+                "Admin dev"
+            ]
+        }
+    ]
+}

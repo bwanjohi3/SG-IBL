@@ -1,0 +1,41 @@
+{
+    "implementation": "iblatmpos",
+    "masterBus": {
+        "socket": "standard-bio"
+    },
+    "debug": true, 
+    "repl": false,
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        },
+        "logLevel": "info"
+    },
+    "console": {
+        "server": {
+            "host": "0.0.0.0",
+            "port": 30002
+        }
+    },
+    "stdOut": {
+        "mode": "dev"
+    },
+    "log": {
+        "streams": [{
+            "level": "trace",
+            "stream": "../logRotateStream",
+            "streamConfig": {
+                "path": "ut5_%Y-%m-%d.log",
+                "symlink": "ut5.log",
+                "compress": true
+            }
+        }]
+    },
+    "bio": {
+        "port": 9015,
+        "url": "http://localhost:9015/",
+        "method": "get"
+    }
+}

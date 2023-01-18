@@ -1,0 +1,81 @@
+@startuml
+package "Card transaction pre-processing /CTP service/" {
+    [ut-ped/ctp] as ped
+    [ut-port-tcp] as pedPort
+    [custom codec] as pedCodec
+    pedPort --> pedCodec
+    pedCodec --> ped
+    [ut-iso/ctp] as iso
+    [ut-codec/iso8583] as isoCodec
+    [ut-port-tcp] as isoPort
+    isoPort --> isoCodec
+    isoCodec --> iso
+    [PIN handling] as pin
+    [card handling] as card
+    [Flow client\nut-port-jsonrpc] as flowClient
+    [HSM] as hsm
+    [ut-port-tcp] as hsmPort
+    [ut-codec/payshield] as hsmCodec
+    hsm --> hsmCodec
+    hsmCodec --> hsmPort
+    [ATM] as atm
+    [ut-port-tcp] as atmPort
+    [ut-codec/ndc] as atmCodec
+    atmPort --> atmCodec
+    atmCodec --> atm
+    [PAN] as pan
+    atm --> monitoring
+    atm --> pin
+    ped --> pin
+    iso --> pin
+    pin --> hsm
+    pin --> card
+    card --> pan
+    card --> flowClient
+    pan --> flowClient
+}
+package "Transaction flow service /Flow service/" {
+    [Flow server\nut-port-httpserver] as flowServer
+    [ut-atm] as utatm
+    [ut-card] as utcard
+    [CTP client\nut-port-jsonrpc] as ctpClient
+    flowServer --> utatm
+    flowServer --> utcard
+    utatm --> ctpClient
+    utcard --> ctpClient
+}
+
+package "Card transaction post-processing /CTP service/" {
+    [CTP server\nut-port-httpserver] as ctpServer
+    [ut-ped/ctp] as ped1
+    [ut-port-tcp] as ped1Port
+    [custom codec] as ped1Codec
+    ped1Codec --> ped1Port
+    ped1 --> ped1Codec
+    [ut-iso/ctp] as iso1
+    [ut-codec/iso8583] as iso1Codec
+    [ut-port-tcp] as iso1Port
+    [PIN translation] as pinTrans
+    iso1Codec --> iso1Port
+    iso1 --> pinTrans
+    [HSM] as hsm1
+    [ut-port-tcp] as hsm1Port
+    [ut-codec/payshield] as hsm1Codec
+    hsm1 --> hsm1Codec
+    hsm1Codec --> hsm1Port
+    [ATM] as atm1
+    [ut-port-tcp] as atm1Port
+    [ut-codec/ndc] as atm1Codec
+    ctpServer --> atm1
+    atm1 --> atm1Codec
+    atm1Codec --> atm1Port
+    ctpServer --> ped1
+    ctpServer --> iso1
+    pinTrans --> hsm1
+    pinTrans --> iso1Codec
+}
+
+flowClient --> flowServer
+ctpClient --> ctpServer
+
+@enduml

@@ -1,0 +1,149 @@
+{
+    "implementation": "standard",
+    "checkPermission": true,
+    "defaultLanguage": "en",
+    "debug": true,
+    "repl_": false,
+    "db": {
+        "db": {
+            "requestTimeout": 40000,
+            "user": "jenkins",
+            "password": "jenkinsPass",
+            "server": "infradb14"
+        },
+        "create": {
+            "user": "ut5"
+        },
+        "permission": {
+            "requireSession": true
+        },
+        "embosser": {
+            "endOfRecord": "0D0A"
+        },
+        "card": {
+            "quantityLowLimit": 1000,
+            "pinLength": 4,
+            "dataGenCheckLimit": 100,
+            "pinMailerFormat": ">L>L>L>L>L>L>L>L>L>010^0>L>010^1>L>010^2>L>010^3>055^P>L>F>"
+        },
+        "logLevel": "trace"
+    },
+     "auditdb": {
+        "db": {
+            "server": "infradb14",
+            "database": "impl-standard-audit",
+            "user": "jenkins",
+            "password": "jenkinsPass",
+            "requestTimeout": 20000
+        },
+        "create": {
+            "user": "ut5"
+        },
+        "logLevel": "trace"
+    },
+    "historydb": {
+        "db": {
+            "server": "infradb14",
+            "database": "impl-standard-history",
+            "user": "jenkins",
+            "password": "jenkinsPass",
+            "requestTimeout": 20000
+        },
+        "create": {
+            "user": "ut5",
+            "pass": "ut5RND"
+        },
+        "logLevel": "trace"
+    },
+    "dbT24": {
+        "db": {
+            "user": "NBVMIGR14",
+            "password": "t24@2015"
+        },
+        "permission": {
+            "requireSession": true
+        }
+    },
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        }
+    },
+    "console": {
+        "server": {
+            "host": "0.0.0.0",
+            "port": 30047
+        }
+    },
+    "stdOut": {
+        "mode": "dev"
+    },
+    "log": false,
+    "masterBus": {
+        "logLevel": "debug",
+        "socket": "standard-solution"
+    },
+    "workerBus": {
+        "logLevel": "debug"
+    },
+    "masterCryptKey": "769977E7018D5AA9D60C79AFA11BA4520FD1CE0D2D24A7A978A28236563F6695",
+    "alert": {
+        "push": {
+            "deviceOSToProvider": {
+                "android": "firebase"
+            }
+        },
+        "ports": {
+            "email": {
+                "channel": "email"
+            },
+            "firebase" : {
+                "channel": "push"
+            }
+        }
+    },
+    "firebase": {
+        "apiKey": "AAAAzS-tQPM:APA91bHoVcdY-QYDpRniu3zA2WZwB6lXB0uun8tsShp4MjBrABdo5vcrGUp0dhmutSiZ_NltphZgH1m9krCqJRqCseLS2xrwG_wPakg-38lpQ_utpwttWvHOJBcKotcvOgJeuVcKhQCP"
+    },
+    "email": {
+        "from": "email.address@softwaregroup-bg.com",
+        "url": "smtp://smtp.gmail.com",
+        "service": "gmail",
+        "logLevel": "error"
+    },
+    "bio": {
+        "logLevel": "trace",
+        "requestTimeout": 60000,
+        "url": "https://192.168.132.20:9050",
+        "uriMap": {
+            "bio.add": "/fingerprint/add",
+            "bio.check": "/fingerprint/check"
+        }
+    },
+    "cron": {
+        "logLevel": "trace",
+        "jobsList": {
+            "test": {
+                "opcode": "test",
+                "pattern": "00 */1 * * * *"
+            }
+        }
+    },
+    "_comment_access": "Ranges are in DECIMAL format. String format is also accepted, however an additinal parsing would be performed which will reduce performace.",
+    "_comment_access_range1": "0.0.0.0 - 0.255.255.255 used for broadcast messages to the current",
+    "_comment_access_range2": "192.88.99.0 - 192.88.99.255 used by 6to4 anycast relays",
+    "_comment_access_range3": "224.0.0.0 - 239.255.255.255 reserved for multicas",
+    "_comment_access_range4": "240.0.0.0 - 255.255.255.255 reserved for future use/Reserved for the 'limited broadcast' destination address",
+    "access": {
+        "restrictions": {
+            "ipRanges": [
+                { "start": 0, "end": 16777215 },
+                { "start": 3227017984, "end": 3227018239 },
+                { "start": 3758096384, "end": 4026531839 },
+                { "start": 4026531840, "end": 4294967295 }
+            ]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.gridDefs, .gridDefsWidget {
+    padding: 10px 0 10px 0;
+    background: #f5f5f5;
+}
+.gridDefsWidget {
+    padding-left: 10px;
+}
+
+.errorWrap {
+    margin-bottom: 10px;
+}
+
+.infoMessage {
+    color: #BDBDBD;
+    font-size: 12px;
+}
+
+.errorMessage {
+    color: #ff3333;
+}
+
+.topMargin {
+    margin-top: 20px;
+}
+
+.buttonsRightMargin {
+    margin-right: 5px;
+}

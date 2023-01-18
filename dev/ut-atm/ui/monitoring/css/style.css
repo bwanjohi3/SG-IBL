@@ -1,0 +1,171 @@
+.vcenter {
+    vertical-align: middle!important;
+}
+.hcenter {
+    text-align: center!important;
+}
+body, html {
+    width: 100%;
+    max-width: 100%;
+    background-color: lightgray;
+}
+body {
+    font-size: 12px;
+    line-height: normal;
+    padding: 5px;
+}
+table.table {
+	width: auto;
+    max-width: 100%;
+    background-color: white;
+}
+table.table-bordered {
+    border: 1px solid black;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid black;
+}
+
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border-bottom-width: 1px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 2px;
+    line-height: normal;
+}
+
+#atmfilter {
+    margin-bottom: 4px;
+}
+
+/*width set through js in order to match atm table width*/
+#atmPagination {
+    margin-bottom: 20px;
+}
+
+.atmPageNumberWrap {
+    margin-left: 25%;
+}
+
+#atmPageNumber {
+    margin: 0;
+}
+
+#atmconnected {
+    margin-bottom: 4px;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 0;
+}
+
+#atmFilterType, #atmFilterInput, #transferAcquirerInput, #transferIssuerInput, #cardFlowSelect, #atmPageSize {
+    height: auto;
+    padding: 0;
+}
+
+#atmTransfersTableBody .transferError {
+    background: #f3bbbb;
+}
+#atmTransfersTableBody .transferNormal {
+    background: #bbf3d0;
+}
+
+.table>thead>tr>th {
+    text-align: right;
+}
+
+.modal-dialog {
+    width: 340px;
+}
+
+article.alert {
+    word-wrap: break-word;
+    position: absolute;
+    right: 5px;
+    width: 300px;
+    z-index: 1;
+    top: 20px;
+}
+
+#login.modal {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#supplyCounters.modal {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-top: 0;
+    margin-left: 3px;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 0;
+    margin-left: -15px;
+}
+
+#logout-btn {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+#login .modal-dialog {
+    width: 440px;
+}
+
+.commandBtn {
+    background-position: top center;
+    background-size: 21px;
+    background-repeat: no-repeat;
+    transition-property: background;
+    transition-duration: .4s;
+}
+
+.commandBtn.commandInProcess {
+    background-color: yellow;
+    background-image: url(../img/loading.gif);
+}
+
+.scrollable-table-wrap {
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 300px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.scrollable-table-wrap table {
+    margin: 0;
+    border: none;
+    border-collapse: separate;
+}
+
+.scrollable-table-wrap table thead {
+    background-color: #fff;
+}
+
+.scrollable-table-wrap table tbody>tr>td,
+.scrollable-table-wrap table tbody>tr>th,
+.scrollable-table-wrap table tfoot>tr>td,
+.scrollable-table-wrap table tfoot>tr>th,
+.scrollable-table-wrap table thead>tr>td,
+.scrollable-table-wrap table thead>tr>th {
+    border-top: none;
+    border-right: none;
+}
+
+.scrollable-table-wrap table thead tr:first-child th {
+    border-top: 1px solid black !important;
+}
+
+.scrollable-table-wrap table th:last-child,
+.scrollable-table-wrap table td:last-child {
+    border-right: 1px solid black;
+}

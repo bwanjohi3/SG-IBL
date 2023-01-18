@@ -1,0 +1,674 @@
+msgid ""
+msgstr ""
+
+msgid "0"
+msgstr "0"
+
+# msgid "Access"
+# msgstr ""
+
+# msgid "Add profile photo"
+# msgstr ""
+
+msgid "Address"
+msgstr "地址"
+
+# msgid "Agency"
+# msgstr ""
+
+# msgid "Agent"
+# msgstr ""
+
+msgid "Amount"
+msgstr "金额"
+
+# msgid "Application step"
+# msgstr ""
+
+# msgid "Approve customer file"
+# msgstr ""
+
+msgid "Approved"
+msgstr "已批准"
+
+# msgid "Assign"
+# msgstr ""
+
+msgid "Assign To"
+msgstr "分派给"
+
+# msgid "Audit & headquarters"
+# msgstr ""
+
+msgid "Back"
+msgstr "背部"
+
+# msgid "Baobab network"
+# msgstr ""
+
+# msgid "Biometric data has been registered successfully!"
+# msgstr ""
+
+# msgid "Biometric fingerprints have been saved!"
+# msgstr ""
+
+# msgid "Biometrie"
+# msgstr ""
+
+# msgid "Block customer file"
+# msgstr ""
+
+# msgid "Blocked"
+# msgstr ""
+
+# msgid "Branch management"
+# msgstr ""
+
+msgid "Cancel"
+msgstr "取消"
+
+# msgid "Capture"
+# msgstr ""
+
+# msgid "Cellphone number"
+# msgstr ""
+
+msgid "Change"
+msgstr "更改"
+
+msgid "Change password"
+msgstr "重置密码"
+
+# msgid "Choose role startup page."
+# msgstr ""
+
+# msgid "Choose Screen Header"
+# msgstr ""
+
+msgid "Client"
+msgstr "客戶"
+
+msgid "Client number"
+msgstr "客户编号"
+
+# msgid "Client number, account, telephone"
+# msgstr ""
+
+# msgid "Client service"
+# msgstr ""
+
+# msgid "Close"
+# msgstr ""
+
+# msgid "Code sent via SMS to"
+# msgstr ""
+
+msgid "Committee"
+msgstr "委员会"
+
+# msgid "comments"
+# msgstr ""
+
+# msgid "Compliance"
+# msgstr ""
+
+# msgid "Conditionally approved"
+# msgstr ""
+
+# msgid "Confirm new password"
+# msgstr ""
+
+# msgid "Confirm your identity by placing your right index finger on the bio fingerprint reader."
+# msgstr ""
+
+# msgid "Confirmation failed"
+# msgstr ""
+
+# msgid "Congratulations! It is successful"
+# msgstr ""
+
+# msgid "Connect with bio"
+# msgstr ""
+
+# msgid "Connect with password"
+# msgstr ""
+
+# msgid "Connection with password"
+# msgstr ""
+
+msgid "Cration Date"
+msgstr "创建日期"
+
+msgid "Credit Line"
+msgstr "信用额度"
+
+msgid "Customer"
+msgstr "客户"
+
+# msgid "Customer ?"
+# msgstr ""
+
+msgid "Customer Management"
+msgstr "客戶管理"
+
+msgid "Customer number"
+msgstr "顧客號碼"
+
+msgid "Customer Number, Account, Phone"
+msgstr "客戶號碼，賬戶，電話"
+
+# msgid "Customer number:"
+# msgstr ""
+
+# msgid "Date created"
+# msgstr ""
+
+msgid "Date of birth"
+msgstr "出生日期"
+
+# msgid "Default Screen"
+# msgstr ""
+
+msgid "Description"
+msgstr "描述"
+
+# msgid "Device not found"
+# msgstr ""
+
+msgid "Duration"
+msgstr "期限"
+
+# msgid "End"
+# msgstr ""
+
+# msgid "Enregister"
+# msgstr ""
+
+# msgid "Enter password"
+# msgstr ""
+
+# msgid "Enter the correct code"
+# msgstr ""
+
+# msgid "Enter the phone number to be validated"
+# msgstr ""
+
+# msgid "Enter the received code"
+# msgstr ""
+
+msgid "Equipment"
+msgstr "设备"
+
+msgid "Error"
+msgstr "错误"
+
+# msgid "Error N10234"
+# msgstr ""
+
+msgid "Evaluate"
+msgstr "评估中"
+
+msgid "Expiry date"
+msgstr "到期日"
+
+# msgid "Fdiagne"
+# msgstr ""
+
+# msgid "Female"
+# msgstr ""
+
+msgid "Files To Validate"
+msgstr "文件以驗證"
+
+# msgid "Fingerprint scanner problem. Restart UTFingerprint windows service or unplug/plug the device."
+# msgstr ""
+
+msgid "Fingerprints"
+msgstr "指紋"
+
+# msgid "Finish"
+# msgstr ""
+
+msgid "First name"
+msgstr "名字"
+
+msgid "First names"
+msgstr "名字"
+
+msgid "Firstname"
+msgstr "名"
+
+# msgid "found results for"
+# msgstr ""
+
+# msgid "From computer"
+# msgstr ""
+
+# msgid "From webcam"
+# msgstr ""
+
+# msgid "Gender_F"
+# msgstr ""
+
+# msgid "Gender_M"
+# msgstr ""
+
+# msgid "Go to home page"
+# msgstr ""
+
+# msgid "has been validated!"
+# msgstr ""
+
+msgid "Home Page"
+msgstr "主頁"
+
+# msgid "HTTP error"
+# msgstr ""
+
+msgid "ID"
+msgstr "身份證"
+
+msgid "ID number"
+msgstr "身份證號"
+
+msgid "Identification"
+msgstr "識別"
+
+# msgid "Identify"
+# msgstr ""
+
+# msgid "illegible"
+# msgstr ""
+
+# msgid "is created for"
+# msgstr ""
+
+# msgid "KYC"
+# msgstr ""
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Last name"
+msgstr "姓"
+
+# msgid "Left Index"
+# msgstr ""
+
+# msgid "Left Little"
+# msgstr ""
+
+# msgid "Left Middle"
+# msgstr ""
+
+# msgid "Left Ring"
+# msgstr ""
+
+# msgid "Left Thumb"
+# msgstr ""
+
+# msgid "Level"
+# msgstr ""
+
+# msgid "Level 1"
+# msgstr ""
+
+# msgid "Level 2"
+# msgstr ""
+
+# msgid "Level 3"
+# msgstr ""
+
+# msgid "Loan Process"
+# msgstr ""
+
+msgid "Loan Purpose"
+msgstr "贷款目的"
+
+msgid "Log out"
+msgstr "登出"
+
+msgid "Login"
+msgstr "登录"
+
+# msgid "Login with password"
+# msgstr ""
+
+# msgid "Male"
+# msgstr ""
+
+# msgid "missing"
+# msgstr ""
+
+# msgid "Mobile computer"
+# msgstr ""
+
+# msgid "Mobile device"
+# msgstr ""
+
+# msgid "Mobile number"
+# msgstr ""
+
+# msgid "Mobile phone"
+# msgstr ""
+
+msgid "Mobile phone number"
+msgstr "手機號碼"
+
+# msgid "Modified on"
+# msgstr ""
+
+msgid "Modify"
+msgstr "修改"
+
+# msgid "Modify password"
+# msgstr ""
+
+msgid "Name"
+msgstr "姓名"
+
+msgid "Nationality"
+msgstr "國籍"
+
+# msgid "New Application"
+# msgstr ""
+
+msgid "New password"
+msgstr "新密码"
+
+# msgid "Next"
+# msgstr ""
+
+# msgid "No files for validation"
+# msgstr ""
+
+# msgid "Not applicable"
+# msgstr ""
+
+# msgid "New loan application"
+# msgstr ""
+
+msgid "Not applicable"
+msgstr "不適用"
+
+# msgid "Not Available"
+# msgstr ""
+
+# msgid "Not Enrolled"
+# msgstr ""
+
+msgid "Old password"
+msgstr "旧密码"
+
+# msgid "Only numbers between 6 and 15 characters long"
+# msgstr ""
+
+# msgid "Other reasons"
+# msgstr ""
+
+# msgid "Otp code sended by email"
+# msgstr ""
+
+# msgid "OTP code sent via email"
+# msgstr ""
+
+# msgid "Parameters"
+# msgstr ""
+
+msgid "Password"
+msgstr "密码"
+
+# msgid "Password is weak"
+# msgstr ""
+
+# msgid "Password updated"
+# msgstr ""
+
+msgid "Passwords do not match"
+msgstr "密码不匹配"
+
+msgid "Pending"
+msgstr "稍等"
+
+# msgid "Pending approval"
+# msgstr ""
+
+# msgid "Permission"
+# msgstr ""
+
+# msgid "Personal number"
+# msgstr ""
+
+# msgid "Personal phone number"
+# msgstr ""
+
+msgid "Phone number"
+msgstr "電話號碼"
+
+# msgid "Picture"
+# msgstr ""
+
+# msgid "Piece de identity"
+# msgstr ""
+
+msgid "Place of birth"
+msgstr "出生地"
+
+# msgid "placeholder"
+# msgstr ""
+
+msgid "Please wait"
+msgstr "請稍候"
+
+msgid "Please wait..."
+msgstr "請稍候"
+
+# msgid "Portable computer"
+# msgstr ""
+
+# msgid "Portfolio management"
+# msgstr ""
+
+msgid "Profile picture"
+msgstr "資料圖片"
+
+msgid "Proof of residency"
+msgstr "居住證明"
+
+msgid "Purpose"
+msgstr "用途"
+
+# msgid "RECAPTURE"
+# msgstr ""
+
+# msgid "Record 3 times the same left finger"
+# msgstr ""
+
+# msgid "Record biometric fingerprints"
+# msgstr ""
+
+msgid "Register"
+msgstr "登记"
+
+# msgid "Reject"
+# msgstr ""
+
+# msgid "Reject customer file"
+# msgstr ""
+
+msgid "Rejected"
+msgstr "已拒绝"
+
+# msgid "Rejection Reason"
+# msgstr ""
+
+# msgid "Required"
+# msgstr ""
+
+# msgid "RESET"
+# msgstr ""
+
+# msgid "results found for"
+# msgstr ""
+
+# msgid "Retry"
+# msgstr ""
+
+# msgid "Right Index"
+# msgstr ""
+
+# msgid "Right Little"
+# msgstr ""
+
+# msgid "Right Middle"
+# msgstr ""
+
+# msgid "Right Ring"
+# msgstr ""
+
+# msgid "Right Thumb"
+# msgstr ""
+
+# msgid "Role and permissions"
+# msgstr ""
+
+msgid "Save"
+msgstr "保存"
+
+# msgid "Save 3 times the same finger"
+# msgstr ""
+
+# msgid "Scan the client biometric fingerprint"
+# msgstr ""
+
+# msgid "Search Results"
+# msgstr ""
+
+# msgid "Select access policy"
+# msgstr ""
+
+# msgid "Select an option"
+# msgstr ""
+
+# msgid "Select document to upload"
+# msgstr ""
+
+# msgid "Send code"
+# msgstr ""
+
+msgid "Settings"
+msgstr "設置"
+
+msgid "Sex"
+msgstr "性別"
+
+msgid "Signature"
+msgstr "簽名"
+
+# msgid "Sorry, the page you are trying to access does not exist."
+# msgstr ""
+
+msgid "Status"
+msgstr "狀態"
+
+# msgid "Submit without"
+# msgstr ""
+
+# msgid "Successfully created"
+# msgstr ""
+
+# msgid "to confirm the application"
+# msgstr ""
+
+# msgid "Test"
+# msgstr ""
+
+# msgid "That's an error."
+# msgstr ""
+
+# msgid "The Access Policy Set defines the method of login, expiration dates, number of tries before locking user, etc."
+# msgstr ""
+
+# msgid "The application"
+# msgstr ""
+
+# msgid "The entered code does not validate phone number"
+# msgstr ""
+
+# msgid "The mobile phone number"
+# msgstr ""
+
+# msgid "The new password cannot be the same as the old one"
+# msgstr ""
+
+# msgid "The profile picture has been added"
+# msgstr ""
+
+# msgid "The uploaded document has been saved successfully"
+# msgstr ""
+
+# msgid "This may be an outdated link."
+# msgstr ""
+
+msgid "Try again"
+msgstr "重试"
+
+# msgid "Up to date"
+# msgstr ""
+
+# msgid "UPDATE STATUS"
+# msgstr ""
+
+# msgid "Upload"
+# msgstr ""
+
+# msgid "Upload document"
+# msgstr ""
+
+# msgid "Upload in progress"
+# msgstr ""
+
+# msgid "Upload in progress..."
+# msgstr ""
+
+# msgid "Upload successful"
+# msgstr ""
+
+# msgid "Use biometric login"
+# msgstr ""
+
+# msgid "Use my password"
+# msgstr ""
+
+# msgid "Username"
+# msgstr ""
+
+# msgid "Validate"
+# msgstr ""
+
+# msgid "Validate mobile phone number"
+# msgstr ""
+
+# msgid "Work number"
+# msgstr ""
+
+# msgid "Work phone number"
+# msgstr ""
+
+# msgid "Wrong Password"
+# msgstr ""
+
+# msgid "Your account has been locked because of inactivity! Please contact the system administrator."
+# msgstr ""
+
+# msgid "Your account has been locked! Please contact the system administrator."
+# msgstr ""
+
+# msgid "Your password has been changed"
+# msgstr ""
+
+msgid "Your password has been updated successfully"
+msgstr "重置密码成功"
+
+# msgid "Your password has expired! Please contact the system administrator."
+# msgstr ""

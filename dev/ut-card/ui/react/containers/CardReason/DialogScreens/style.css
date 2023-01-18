@@ -1,0 +1,15 @@
+.contentWrap {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.moduleWrap, .actionWrap, .reasonNameWrap, .statusWrap {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.reasonNameWrap textArea {
+    max-height: 80px;
+}

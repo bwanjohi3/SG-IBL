@@ -1,0 +1,72 @@
+.dropdownWrapper {
+    width: 180px;
+    display: inline-block;
+}
+
+.defaultInputWrapper {
+    display: none;
+}
+
+.infoInputWrapper {
+    width: 170px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.buttonsWrapper {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-top: 0px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.buttonsInnerWrapper {
+    position: absolute;
+    top: 2px;
+}
+
+.browseBtn {
+    background-color: #d4d8dd;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    color: #595959;
+}
+
+.button {
+    padding: 5px 5px 5px 30px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: #595959;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #D7D6D6;
+    transition: background-color .3s;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #595959;
+    cursor: pointer;
+}
+
+.button:focus {
+    text-decoration: none;
+    outline: none;
+    color: #595959;
+}
+
+.removeAttachment {
+    background: url('./../commonImages/remove.png') no-repeat 7px 6px;
+}
+
+.viewAttachment {
+    background: url('./images/view.png') no-repeat 7px 10px;
+}
+
+.downloadAttachment {
+    background: url('./images/download.png') no-repeat 7px 6px;
+}

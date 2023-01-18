@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-ctp-payshield@^6.1.0",
+        "scope": null,
+        "escapedName": "ut-ctp-payshield",
+        "name": "ut-ctp-payshield",
+        "rawSpec": "^6.1.0",
+        "spec": ">=6.1.0 <7.0.0",
+        "type": "range"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp"
+    ]
+  ],
+  "_from": "ut-ctp-payshield@>=6.1.0 <7.0.0",
+  "_id": "ut-ctp-payshield@6.1.2",
+  "_inCache": true,
+  "_location": "/ut-ctp-payshield",
+  "_nodeVersion": "6.9.5",
+  "_npmUser": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ut-ctp-payshield@^6.1.0",
+    "scope": null,
+    "escapedName": "ut-ctp-payshield",
+    "name": "ut-ctp-payshield",
+    "rawSpec": "^6.1.0",
+    "spec": ">=6.1.0 <7.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/ut-ctp"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-ctp-payshield/-/ut-ctp-payshield-6.1.2.tgz",
+  "_shasum": "26ec02100ed6b84c05275375866dd43bece82eb9",
+  "_shrinkwrap": null,
+  "_spec": "ut-ctp-payshield@^6.1.0",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp",
+  "author": "",
+  "dependencies": {
+    "lodash.assign": "4.2.0",
+    "ut-codec-payshield": "^6.1.1",
+    "ut-error": "^5.4.9"
+  },
+  "description": "Card transactions pre-processing module for Payshield",
+  "devDependencies": {
+    "joi": "10.0.6",
+    "ut-run": "^9.0.0-ut6.5",
+    "ut-tools": "^5.26.0"
+  },
+  "dist": {
+    "shasum": "26ec02100ed6b84c05275375866dd43bece82eb9",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-ctp-payshield/-/ut-ctp-payshield-6.1.2.tgz"
+  },
+  "gitHead": "04f830654ef0db77e3f5c945971cfb8c62b94175",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "ut-ctp-payshield",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "ut-bus": "^6.0.0-ut6.1",
+    "ut-port-script": "^6.0.0-ut6.3",
+    "ut-port-tcp": "^6.0.0-ut6.5"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwaregroup-bg.com/repository/npm-internal"
+  },
+  "readme": "# Card transactions pre-processing module for Payshield\n\n## Scope\n\n1. Implement the communication with PayShield 9000 HSM\n   * PIN verification\n   * PIN translation\n   * PIN deriving\n   * PIN mailer printing\n   * TPK generation\n   * TAK generation\n   * MAC generation\n   * MAC verification\n   * ZPK import\n   * ZPK generation\n\n## Public API\n\nThe module exposes the following methods:\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.softwaregroup-bg.com:ut5/ut-ctp-payshield.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.1.2"
+}

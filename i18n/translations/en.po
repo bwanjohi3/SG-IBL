@@ -1,0 +1,8 @@
+msgid ""
+msgstr ""
+
+msgid "Gender_F"
+msgstr "F"
+
+msgid "Gender_M"
+msgstr "M"

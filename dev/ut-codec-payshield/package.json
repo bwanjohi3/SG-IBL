@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-codec-payshield@^6.1.1",
+        "scope": null,
+        "escapedName": "ut-codec-payshield",
+        "name": "ut-codec-payshield",
+        "rawSpec": "^6.1.1",
+        "spec": ">=6.1.1 <7.0.0",
+        "type": "range"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp-payshield"
+    ]
+  ],
+  "_from": "ut-codec-payshield@>=6.1.1 <7.0.0",
+  "_id": "ut-codec-payshield@6.1.1",
+  "_inCache": true,
+  "_location": "/ut-codec-payshield",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ut-codec-payshield-6.1.1.tgz_1508749176049_0.22972168680280447"
+  },
+  "_npmUser": {
+    "name": "kalin.krustev",
+    "email": "kalin.krustev@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ut-codec-payshield@^6.1.1",
+    "scope": null,
+    "escapedName": "ut-codec-payshield",
+    "name": "ut-codec-payshield",
+    "rawSpec": "^6.1.1",
+    "spec": ">=6.1.1 <7.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/ut-ctp-payshield"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-codec-payshield/-/ut-codec-payshield-6.1.1.tgz",
+  "_shasum": "dfe28d53db43375d05e5f400054034bf873efc61",
+  "_shrinkwrap": null,
+  "_spec": "ut-codec-payshield@^6.1.1",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp-payshield",
+  "bugs": {
+    "url": "https://github.com/softwaregroup-bg/ut-codec-payshield/issues"
+  },
+  "dependencies": {
+    "lodash.merge": "4.6.0",
+    "ut-bitsyntax": "^6.0.7"
+  },
+  "description": "Payshield codec",
+  "devDependencies": {
+    "ut-tools": "^5.23.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "dfe28d53db43375d05e5f400054034bf873efc61",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-codec-payshield/-/ut-codec-payshield-6.1.1.tgz"
+  },
+  "gitHead": "1192928ce6e8be9180311405b29100346e2778de",
+  "homepage": "https://github.com/softwaregroup-bg/ut-codec-payshield#readme",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "kalin.krustev",
+      "email": "kalin.krustev@gmail.com"
+    }
+  ],
+  "name": "ut-codec-payshield",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/softwaregroup-bg/ut-codec-payshield.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.1.1"
+}

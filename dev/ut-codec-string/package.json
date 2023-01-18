@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-codec-string",
+        "scope": null,
+        "escapedName": "ut-codec-string",
+        "name": "ut-codec-string",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\PosTMS"
+    ]
+  ],
+  "_from": "ut-codec-string@latest",
+  "_id": "ut-codec-string@6.1.0",
+  "_inCache": true,
+  "_location": "/ut-codec-string",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ut-codec-string-6.1.0.tgz_1509029545607_0.7200728061143309"
+  },
+  "_npmUser": {
+    "name": "kalin.krustev",
+    "email": "kalin.krustev@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ut-codec-string",
+    "scope": null,
+    "escapedName": "ut-codec-string",
+    "name": "ut-codec-string",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-codec-string/-/ut-codec-string-6.1.0.tgz",
+  "_shasum": "256470843ffb9b6e4f57c0aa5dd940d179baad80",
+  "_shrinkwrap": null,
+  "_spec": "ut-codec-string",
+  "_where": "D:\\PosTMS",
+  "bugs": {
+    "url": "https://github.com/softwaregroup-bg/ut-codec-string/issues"
+  },
+  "dependencies": {},
+  "description": "UT codec module.",
+  "devDependencies": {
+    "ut-tools": "^5.23.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "256470843ffb9b6e4f57c0aa5dd940d179baad80",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-codec-string/-/ut-codec-string-6.1.0.tgz"
+  },
+  "gitHead": "d5bcb641e821f585f0ead2ad58db8911a440e986",
+  "homepage": "https://github.com/softwaregroup-bg/ut-codec-string#readme",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "kalin.krustev",
+      "email": "kalin.krustev@gmail.com"
+    }
+  ],
+  "name": "ut-codec-string",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/softwaregroup-bg/ut-codec-string.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.1.0"
+}

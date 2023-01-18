@@ -1,0 +1,125 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-transfer@6.20.0",
+        "scope": null,
+        "escapedName": "ut-transfer",
+        "name": "ut-transfer",
+        "rawSpec": "6.20.0",
+        "spec": "6.20.0",
+        "type": "version"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard"
+    ]
+  ],
+  "_from": "ut-transfer@6.20.0",
+  "_id": "ut-transfer@6.20.0",
+  "_inCache": true,
+  "_location": "/ut-transfer",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ut-transfer-6.20.0.tgz_1508967631496_0.5287795169278979"
+  },
+  "_npmUser": {
+    "name": "kalin.krustev",
+    "email": "kalin.krustev@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "hoek": "4.2.0",
+    "isemail": "2.2.1",
+    "items": "2.1.1",
+    "topo": "2.0.2"
+  },
+  "_requested": {
+    "raw": "ut-transfer@6.20.0",
+    "scope": null,
+    "escapedName": "ut-transfer",
+    "name": "ut-transfer",
+    "rawSpec": "6.20.0",
+    "spec": "6.20.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-transfer/-/ut-transfer-6.20.0.tgz",
+  "_shasum": "79f78e68dac5c0b6eae5c7ebfbccc1a1876a75f9",
+  "_shrinkwrap": null,
+  "_spec": "ut-transfer@6.20.0",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard",
+  "author": {
+    "name": "Kalin Krustev",
+    "email": "kalin.krustev@softwaregroup-bg.com"
+  },
+  "bugs": {
+    "url": "https://github.com/softwaregroup-bg/ut-transfer/issues"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "joi": "10.0.6"
+  },
+  "description": "UT Transfer",
+  "devDependencies": {
+    "ut-run": "^8.1.15",
+    "ut-test": "^5.6.3",
+    "ut-tools": "^5.17.26"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "79f78e68dac5c0b6eae5c7ebfbccc1a1876a75f9",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-transfer/-/ut-transfer-6.20.0.tgz"
+  },
+  "gitHead": "34990594de2f924a20edc40d1bfef1e8bd5442e6",
+  "homepage": "https://github.com/softwaregroup-bg/ut-transfer#readme",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "kalin.krustev",
+      "email": "kalin.krustev@gmail.com"
+    }
+  ],
+  "name": "ut-transfer",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "ut-bus": "^5.11.1",
+    "ut-error": "^5.4.3",
+    "ut-rule": "^9.3.0",
+    "ut-report": "^5.16.17",
+    "ut-front": "^7.1.1",
+    "ut-front-react": "^9.11.1",
+    "ut-user": "^7.8.1",
+    "react": "^15.6.1",
+    "react-router": "^3.0.0",
+    "react-redux": "^5.0.5",
+    "redux": "3.7.2"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/softwaregroup-bg/ut-transfer.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.20.0"
+}

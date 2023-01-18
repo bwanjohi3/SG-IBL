@@ -1,0 +1,680 @@
+msgid ""
+msgstr ""
+
+msgid "0"
+msgstr "0"
+
+msgid "Access"
+msgstr "Accès"
+
+msgid "Add profile photo"
+msgstr "Ajouter une photo de profil"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Agency"
+msgstr "Agence"
+
+msgid "Agent"
+msgstr "Agent"
+
+msgid "Amount"
+msgstr "Montant"
+
+msgid "Application step"
+msgstr "L'étape d'application"
+
+msgid "Approve customer file"
+msgstr "Valider fichier client"
+
+msgid "Approved"
+msgstr "Approuvé"
+
+msgid "Assign"
+msgstr "Assigner"
+
+msgid "Assign To"
+msgstr "Assigné à"
+
+# msgid "Audit & headquarters"
+# msgstr ""
+
+# msgid "autres motifs"
+# msgstr "Autres motifs"
+
+msgid "Back"
+msgstr "Retour"
+
+# msgid "Baobab network"
+# msgstr ""
+
+msgid "Biometric data has been registered successfully!"
+msgstr "Les empreintes biométriques ont bien été enregistrées!"
+
+msgid "Biometric fingerprints have been saved!"
+msgstr "Les empreintes biométriques ont bien été enregistrées!"
+
+msgid "Biometrie"
+msgstr "Biométrie"
+
+msgid "Block customer file"
+msgstr "Bloquer fichier client"
+
+msgid "Blocked"
+msgstr "Bloqué"
+
+msgid "Branch management"
+msgstr "Gestion d'agence"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Capture"
+msgstr "Valider"
+
+msgid "Cellphone number"
+msgstr "Numéro mobile"
+
+msgid "Change"
+msgstr "Modifier"
+
+msgid "Change password"
+msgstr "Modifier mot de passe"
+
+# msgid "Choisissez le type de document et cliquez sur uneoption d'importation"
+# msgstr "Choisissez le type de document et cliquez sur une option d'importation"
+
+# msgid "Choisissez une option d'ajout"
+# msgstr "Choisissez une option d'ajout"
+
+msgid "Choose role startup page."
+msgstr "Choisissez la page de départ du rôle."
+
+msgid "Choose Screen Header"
+msgstr "Choisissez un écran d'en-tête"
+
+msgid "Client"
+msgstr "Client"
+
+msgid "Client number"
+msgstr "Numéro Client"
+
+msgid "Client number, account, telephone"
+msgstr "Numéro client, compte, téléphone"
+
+msgid "Client service"
+msgstr "Gestion de clientèle"
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "Code sent via SMS to"
+msgstr "Code envoyé via SMS à"
+
+msgid "Committee"
+msgstr "Comité"
+
+msgid "comments"
+msgstr "commentaires"
+
+# msgid "Compliance"
+# msgstr ""
+
+msgid "Conditionally approved"
+msgstr "Approuvée sous conditions"
+
+msgid "Confirm new password"
+msgstr "Confirmer nouveau mot de passe"
+
+msgid "Confirm your identity by placing your right index finger on the bio fingerprint reader."
+msgstr "Posez votre doigt sur le lecteur biométrique pour confirmer votre identité."
+
+msgid "Confirmation failed"
+msgstr "Echec de confirmation"
+
+msgid "Congratulations! It is successful"
+msgstr "Modification effectuée"
+
+msgid "Connect with bio"
+msgstr "Connexion par biométrie"
+
+msgid "Connect with password"
+msgstr "Se connecter avec un mot de passe"
+
+msgid "Connection with password"
+msgstr "Connexion par mot de passe"
+
+msgid "Cration Date"
+msgstr "Date de création"
+
+msgid "Credit Line"
+msgstr "Ligne de Crédit"
+
+msgid "Customer"
+msgstr "Client"
+
+msgid "Customer ?"
+msgstr "Numéro client"
+
+msgid "Customer Management"
+msgstr "Gestion de clientèle"
+
+msgid "Customer number"
+msgstr "Numéro client"
+
+msgid "Customer Number, Account, Phone"
+msgstr "Numéro client, compte, téléphone"
+
+msgid "Customer number:"
+msgstr "Numéro de client:"
+
+msgid "Date created"
+msgstr "Ouverture"
+
+msgid "Date of birth"
+msgstr "Date de naissance"
+
+msgid "Default Screen"
+msgstr "Écran par Défaut"
+
+msgid "Description"
+msgstr "Décrire"
+
+msgid "Device not found"
+msgstr "Appareil manquant"
+
+msgid "Duration"
+msgstr "Durée"
+
+msgid "End"
+msgstr "Fin"
+
+msgid "Enregister"
+msgstr "Enregister"
+
+msgid "Enter password"
+msgstr "Saisir mot de passe"
+
+msgid "Enter the correct code"
+msgstr "Entrez le bon code"
+
+msgid "Enter the phone number to be validated"
+msgstr "Entrez le numéro de téléphone à valider"
+
+msgid "Enter the received code"
+msgstr "Saisissez le code reçu"
+
+msgid "Equipment"
+msgstr "Matériel"
+
+msgid "Error"
+msgstr "Erreur"
+
+msgid "Error N10234"
+msgstr "Error N10234"
+
+msgid "Evaluate"
+msgstr "Évaluer"
+
+msgid "Expiry date"
+msgstr "Date d'expiration"
+
+msgid "Fdiagne"
+msgstr "Fdiagne"
+
+msgid "Female"
+msgstr "Femme"
+
+msgid "Files To Validate"
+msgstr "A valider"
+
+msgid "Fingerprint scanner problem. Restart UTFingerprint windows service or unplug/plug the device."
+msgstr "Problème avec le lecteur biométrique. Veuillez redémarrer le service Windows UTFingerprint ou reconnecter le lecteur."
+
+msgid "Fingerprints"
+msgstr "Empreintes"
+
+msgid "Finish"
+msgstr "Terminer"
+
+msgid "First name"
+msgstr "Prénom"
+
+msgid "First names"
+msgstr "Prénoms"
+
+msgid "Firstname"
+msgstr "Prénom"
+
+msgid "found results for"
+msgstr "résultats trouvés pour"
+
+msgid "From computer"
+msgstr "De l'ordinateur"
+
+msgid "From webcam"
+msgstr "De la webcam"
+
+msgid "Gender_F"
+msgstr "F"
+
+msgid "Gender_M"
+msgstr "H"
+
+msgid "Go to home page"
+msgstr "Retourner à la page d'accueil"
+
+msgid "has been validated!"
+msgstr "a été validé!"
+
+msgid "Home Page"
+msgstr "Accueil"
+
+msgid "HTTP error"
+msgstr "Erreur HTTP"
+
+msgid "ID"
+msgstr "Pièce d'identité"
+
+msgid "ID number"
+msgstr "Numéro d'identification nationale"
+
+msgid "Identification"
+msgstr "Identification"
+
+msgid "Identify"
+msgstr "M'identifier"
+
+msgid "illegible"
+msgstr "illisible"
+
+# msgid "IMPORTER UNE PIÈCE"
+# msgstr "IMPORTER UNE PIÈCE"
+
+msgid "is created for"
+msgstr "est créée pour"
+
+msgid "KYC"
+msgstr "Niveau"
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "Last name"
+msgstr "Nom"
+
+msgid "Left Index"
+msgstr "Index Gauche"
+
+msgid "Left Little"
+msgstr "Petit doigt Gauche"
+
+msgid "Left Middle"
+msgstr "Majeur Gauche"
+
+msgid "Left Ring"
+msgstr "Annulaire Gauche"
+
+msgid "Left Thumb"
+msgstr "Pouce Gauche"
+
+msgid "Level"
+msgstr "Niveau"
+
+msgid "Level 1"
+msgstr "Niveau 1"
+
+msgid "Level 2"
+msgstr "Niveau 2"
+
+msgid "Level 3"
+msgstr "Niveau 3"
+
+msgid "Loan Process"
+msgstr "Processus de demande"
+
+msgid "Loan Purpose"
+msgstr "Objet du Crédit"
+
+msgid "Log out"
+msgstr "Se déconnecter"
+
+msgid "Login"
+msgstr "Se connecter"
+
+msgid "Login with password"
+msgstr "Connexion par mot de passe"
+
+msgid "Male"
+msgstr "Homme"
+
+msgid "missing"
+msgstr "manquante"
+
+msgid "Mobile computer"
+msgstr "Ordinateur portable"
+
+msgid "Mobile device"
+msgstr "Téléphone portable"
+
+msgid "Mobile number"
+msgstr "Numéro mobile"
+
+msgid "Mobile phone"
+msgstr "Téléphone portable"
+
+msgid "Mobile phone number"
+msgstr "Numéro mobile"
+
+msgid "Modified on"
+msgstr "Modifié le"
+
+msgid "Modify"
+msgstr "Modifier"
+
+msgid "Modify password"
+msgstr "Modifier le mot de passe"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Nationality"
+msgstr "Nationalité"
+
+msgid "New Application"
+msgstr "Nouvelle Demande"
+
+msgid "New Loan Application"
+msgstr "Nouvelle demande"
+
+msgid "New password"
+msgstr "Nouveau mot de passe"
+
+msgid "Next"
+msgstr "Suivant"
+
+msgid "No files for validation"
+msgstr "Aucun fichier à valider"
+
+msgid "Not applicable"
+msgstr "N'est pas applicable"
+
+msgid "Not Available"
+msgstr "Non disponible"
+
+msgid "Not Enrolled"
+msgstr "Non inscrit"
+
+msgid "Old password"
+msgstr "Ancien mot de passe"
+
+msgid "Only numbers between 6 and 15 characters long"
+msgstr "Uniquement des numéros entre 6 et 15 caractères"
+
+msgid "Other reasons"
+msgstr "Autres motifs"
+
+msgid "Otp code sended by email"
+msgstr "Code OTP envoyé par email"
+
+msgid "OTP code sent via email"
+msgstr "Code OTP envoyé par e-mail"
+
+msgid "Parameters"
+msgstr "Paramètres"
+
+msgid "Password"
+msgstr "Mot de passe"
+
+msgid "Password is weak"
+msgstr "Mot de passe faible"
+
+msgid "Password updated"
+msgstr "Modification effectuée"
+
+msgid "Passwords do not match"
+msgstr "Les mots de passe sont différents"
+
+msgid "Pending"
+msgstr "En attente"
+
+msgid "Pending approval"
+msgstr "En attente de validation"
+
+msgid "Permission"
+msgstr "Rôle et autorisations"
+
+msgid "Personal number"
+msgstr "Numéro personnel"
+
+msgid "Personal phone number"
+msgstr "Numéro personnel"
+
+msgid "Phone number"
+msgstr "Numéro mobile"
+
+msgid "Picture"
+msgstr "Photo portrait"
+
+msgid "Piece de identity"
+msgstr "Pièce d'identité"
+
+msgid "Place of birth"
+msgstr "Lieu de naissance"
+
+msgid "placeholder"
+msgstr "placeholder"
+
+msgid "Please wait"
+msgstr "Veuillez patienter"
+
+msgid "Please wait..."
+msgstr "Veuillez patienter…"
+
+msgid "Portable computer"
+msgstr "Ordinateur portable"
+
+msgid "Portfolio management"
+msgstr "Gestion de portefeuille"
+
+msgid "Profile picture"
+msgstr "Photo portrait"
+
+msgid "Proof of residency"
+msgstr "Justificatif de domicile"
+
+msgid "Purpose"
+msgstr "Objectif"
+
+msgid "RECAPTURE"
+msgstr "VALIDER"
+
+msgid "Record 3 times the same left finger"
+msgstr "Enregistrez 3 fois le même doigt gauche"
+
+msgid "Record biometric fingerprints"
+msgstr "Enregistrer empreintes biométriques"
+
+msgid "Register"
+msgstr "Enregister"
+
+msgid "Reject"
+msgstr "Rejeter"
+
+msgid "Reject customer file"
+msgstr "Rejeter fichier client"
+
+msgid "Rejected"
+msgstr "Rejeté"
+
+msgid "Rejection Reason"
+msgstr "Raison du rejet"
+
+msgid "Required"
+msgstr "Obligatoire"
+
+msgid "RESET"
+msgstr "RÉINITIALISER"
+
+msgid "results found for"
+msgstr "Résultats trouvés pour"
+
+msgid "Retry"
+msgstr "Réessayer"
+
+msgid "Right Index"
+msgstr "Index Droit"
+
+msgid "Right Little"
+msgstr "Petit doigt Droit"
+
+msgid "Right Middle"
+msgstr "Majeur Droit"
+
+msgid "Right Ring"
+msgstr "Annulaire Droit"
+
+msgid "Right Thumb"
+msgstr "Pouce Droit"
+
+msgid "Role and permissions"
+msgstr "Rôle et permissions"
+
+msgid "Save"
+msgstr "Enregistrer"
+
+msgid "Save 3 times the same finger"
+msgstr "Enregistrez 3 fois le même doigt"
+
+msgid "Scan the client biometric fingerprint"
+msgstr "Prenez les empruntes biométriques du client"
+
+msgid "Search Results"
+msgstr "Résultats de la recherche"
+
+msgid "Select access policy"
+msgstr "Sélectionnez une politique d'accès"
+
+msgid "Select an option"
+msgstr "Choisissez une option"
+
+msgid "Select document to upload"
+msgstr "Choisissez un document à importer"
+
+msgid "Send code"
+msgstr "Envoyer le code"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Sex"
+msgstr "Sexe"
+
+msgid "Signature"
+msgstr "Signature"
+
+msgid "Sorry, the page you are trying to access does not exist."
+msgstr "La page que vous tentez d’accéder n'existe pas!"
+
+msgid "Status"
+msgstr "Statut dossier"
+
+msgid "Submit without"
+msgstr "Soumettre sans"
+
+msgid "Successfully created"
+msgstr "Créée avec succès"
+
+msgid "to confirm the application"
+msgstr "pour valider sa demande"
+
+msgid "That's an error."
+msgstr "Ceci est une erreur."
+
+msgid "The Access Policy Set defines the method of login, expiration dates, number of tries before locking user, etc."
+msgstr "La politique d'accès définit la méthode d'ouverture de session, les dates d'expiration, le nombre d'essais avant verrouillage de l'utilisateur, etc."
+
+msgid "The application"
+msgstr "La demande"
+
+msgid "The entered code does not validate phone number"
+msgstr "Le code entré ne valide pas le numéro"
+
+msgid "The mobile phone number"
+msgstr "Le numéro de portable"
+
+msgid "The new password cannot be the same as the old one"
+msgstr "Le nouveau mot de passe doit être différent de l’ancien mot de passe"
+
+msgid "The profile picture has been added"
+msgstr "La photo de profile a été ajoutée"
+
+msgid "The uploaded document has been saved successfully"
+msgstr "L'importation de la pièce a été enregistrée"
+
+msgid "This may be an outdated link."
+msgstr "Ceci peut être un lien périmé."
+
+msgid "Try again"
+msgstr "Réessayer"
+
+msgid "Up to date"
+msgstr "Validé"
+
+msgid "UPDATE STATUS"
+msgstr "METTRE À JOUR"
+
+msgid "Upload"
+msgstr "Importer"
+
+msgid "Upload document"
+msgstr "Importer une pièce"
+
+msgid "Upload in progress"
+msgstr "Importation en cours"
+
+msgid "Upload in progress..."
+msgstr "Importation en cours..."
+
+msgid "Upload successful"
+msgstr "Importation réussie"
+
+msgid "Use biometric login"
+msgstr "Utiliser la connexion biométrique"
+
+msgid "Use my password"
+msgstr "Utiliser le mot de passe"
+
+msgid "Username"
+msgstr "Nom d’utilisateur"
+
+msgid "Validate"
+msgstr "Valider"
+
+msgid "Validate mobile phone number"
+msgstr "Valider le numéro mobile"
+
+msgid "Work number"
+msgstr "Numéro de travail"
+
+msgid "Work phone number"
+msgstr "Numéro de travail"
+
+msgid "Wrong Password"
+msgstr "Mot de passe incorrect"
+
+msgid "Your account has been locked because of inactivity! Please contact the system administrator."
+msgstr "Votre profil utilisateur est verrouillé à cause de l'inactivité! Veuillez contacter votre administrateur réseau."
+
+msgid "Your account has been locked! Please contact the system administrator."
+msgstr "Votre profil utilisateur a été verrouillé! Veuillez contacter votre administrateur réseau."
+
+msgid "Your password has been changed"
+msgstr "Votre mot de passe a bien été modifié."
+
+msgid "Your password has been updated successfully"
+msgstr "Votre mot de passe a bien été modifié"
+
+msgid "Your password has expired! Please contact the system administrator."
+msgstr "Votre mot de passe est expiré! Veuillez contacter votre administrateur réseau."

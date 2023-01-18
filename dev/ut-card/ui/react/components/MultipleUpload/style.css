@@ -1,0 +1,31 @@
+.accordionContent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.addDocumentWrapper {
+    cursor: pointer;
+    color: #595959;
+    border: 1px solid transparent;
+    padding: 3px;
+}
+
+.addDocumentWrapper:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #D7D6D6;
+    transition: background-color .3s;
+    border-radius: 2px;
+    color: #595959;
+}
+
+.addDocumentLabel {
+    margin-left: 5px;
+}
+
+.noDocuments {
+    color: #BDBDBD;
+}
+
+.topMargin {
+    margin-top: 20px;
+}

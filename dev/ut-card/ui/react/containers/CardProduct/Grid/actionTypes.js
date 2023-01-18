@@ -1,0 +1,9 @@
+export const FETCH = Symbol('FETCH_CARD_PRODUCTS');
+export const EDIT = Symbol('EDIT_CARD_PRODUCT');
+export const CHECK = Symbol('CHECK_CARD_PRODUCT');
+export const MULTI_CHECK = Symbol('MULTI_CHECK_CARD_PRODUCTS');
+export const REFETCH = Symbol('REFETCH_CARD_PRODUCTS');
+export const UPDATE_PAGINATION = Symbol('UPDATE_PAGINATION');
+export const TOGGLE_PRODUCT_STATUS = Symbol('TOGGLE_PRODUCT_STATUS');
+export const TOGGLE_COLUMN = Symbol('TOGGLE_COLUMN');
+export const SET_VISIBLE_COLUMNS = Symbol('SET_VISIBLE_COLUMNS');

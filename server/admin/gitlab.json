@@ -1,0 +1,127 @@
+{
+    "implementation": "standard",
+    "defaultLanguage": "en",
+    "debug": true,
+    "log": false,
+    "repl": false,
+    "db": {
+        "db": {
+            "server": "devdb08",
+            "user": "gitlab",
+            "password": "gitlab",
+            "requestTimeout": 20000
+        },
+        "create": {
+            "user": "ut5"
+        },
+        "permission": {
+            "requireSession": true
+        },
+        "embosser": {
+            "endOfRecord": "0D0A"
+        },
+        "card": {
+            "quantityLowLimit": 1000,
+            "pinLength": 4,
+            "dataGenCheckLimit": 100,
+            "pinMailerFormat": ">L>L>L>L>L>L>L>L>L>010^0>L>010^1>L>010^2>L>010^3>055^P>L>F>"
+        },
+        "logLevel": "trace"
+    },
+    "auditdb": {
+         "db": {
+             "server": "devdb08",
+             "database": "impl-standard-audit",			 
+             "requestTimeout": 80000
+         },
+		 "create": {
+            "user": "ut5"
+         },
+         "logLevel": "trace"
+     },
+     "historydb": {
+         "db": {
+             "server": "devdb08",
+             "database": "impl-standard-history",             
+			 "requestTimeout": 800000
+         },
+		 "create": {
+            "user": "ut5"
+         },
+         "logLevel": "trace"
+     },
+    "mirrors": {
+        "url": "http://192.168.132.20/Mirrorsapi/",
+         "uriMap": {
+            "mirrors.viewReport": "/api/documentviewer",
+            "mirrors.getReport": "/api/reports"
+        }
+    },
+    "performance": {
+        "id": "standard",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        }
+    },
+    "console": false,
+    "stdOut": {
+        "mode": "dev"
+    },
+    "masterBus": {
+        "logLevel": "debug",
+        "socket": "standard-admin"
+    },
+    "workerBus": {
+        "logLevel": "debug"
+    },
+    "alert": {
+        "push": {
+            "deviceOSToProvider": {
+                "android": "firebase"
+            }
+        },
+        "ports": {
+            "email": {
+                "channel": "email"
+            },
+            "firebase" : {
+                "channel": "push"
+            }
+        }
+    },
+    "firebase": {
+        "apiKey": "AAAAzS-tQPM:APA91bHoVcdY-QYDpRniu3zA2WZwB6lXB0uun8tsShp4MjBrABdo5vcrGUp0dhmutSiZ_NltphZgH1m9krCqJRqCseLS2xrwG_wPakg-38lpQ_utpwttWvHOJBcKotcvOgJeuVcKhQCP"
+    },
+    "bio": {
+        "concurrency": 250,
+        "logLevel": "trace",
+        "requestTimeout": 60000,
+        "url": "http://localhost:9015/",
+        "uriMap": {
+            "bio.add": "fingerprint/add",
+            "bio.check": "fingerprint/check",
+            "bio.deletebiodata": "fingerprint/delete",
+
+            "bio.getClientFile": "fingerprint/getclientfile"
+        }
+    },
+    "bioMock": {
+        "mock": {
+            "port": 9015
+        },
+        "url": "http://localhost:9015/",
+        "method": "get"
+    },
+    "masterCryptKey": "769977E7018D5AA9D60C79AFA11BA4520FD1CE0D2D24A7A978A28236563F6695",
+    "t24/senegal": {
+        "host": "172.31.80.137",
+        "port": 9970,
+        "externalResponseCodesToCodeType": {
+            "-32031": "wrongUsername",
+            "-32032": "wrongPassword"
+        },
+        "language": {},
+        "logLevel": "error"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "implementation": "standard",
+    "repl": false,
+    "console": false,
+    "log": false,
+    "debug": true,
+    "masterBus": {
+        "logLevel": "error",
+        "socket": false
+    },
+    "workerBus": {
+        "logLevel": "error"
+    },
+    "backend": {
+        "logLevel": "error",
+        "uri": "/rpc",
+        "url": "http://127.0.0.1:8003",
+        "method": "post"
+    }
+}

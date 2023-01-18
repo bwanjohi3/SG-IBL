@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-codec-iso8583@^6.1.1",
+        "scope": null,
+        "escapedName": "ut-codec-iso8583",
+        "name": "ut-codec-iso8583",
+        "rawSpec": "^6.1.1",
+        "spec": ">=6.1.1 <7.0.0",
+        "type": "range"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp-iso"
+    ]
+  ],
+  "_from": "ut-codec-iso8583@>=6.1.1 <7.0.0",
+  "_id": "ut-codec-iso8583@6.1.1",
+  "_inCache": true,
+  "_location": "/ut-codec-iso8583",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ut-codec-iso8583-6.1.1.tgz_1508806552063_0.6980452060233802"
+  },
+  "_npmUser": {
+    "name": "kalin.krustev",
+    "email": "kalin.krustev@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ut-codec-iso8583@^6.1.1",
+    "scope": null,
+    "escapedName": "ut-codec-iso8583",
+    "name": "ut-codec-iso8583",
+    "rawSpec": "^6.1.1",
+    "spec": ">=6.1.1 <7.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/ut-ctp-iso",
+    "/ut-iso"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-codec-iso8583/-/ut-codec-iso8583-6.1.1.tgz",
+  "_shasum": "d6e43f7955b20fd3b74b67958c4b71baeec451a4",
+  "_shrinkwrap": null,
+  "_spec": "ut-codec-iso8583@^6.1.1",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard\\node_modules\\ut-ctp-iso",
+  "bugs": {
+    "url": "https://github.com/softwaregroup-bg/ut-codec-iso8583/issues"
+  },
+  "dependencies": {
+    "lodash.merge": "4.6.0",
+    "ut-bitsyntax": "^6.0.15",
+    "ut-emv": "^6.1.1",
+    "ut-error": "^5.4.9"
+  },
+  "description": "UT codec module.",
+  "devDependencies": {
+    "adiff": "0.2.13",
+    "ut-tools": "^5.23.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d6e43f7955b20fd3b74b67958c4b71baeec451a4",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-codec-iso8583/-/ut-codec-iso8583-6.1.1.tgz"
+  },
+  "gitHead": "66bd8d39e29ed22feeac4c0e56fec1f34ca2b5df",
+  "homepage": "https://github.com/softwaregroup-bg/ut-codec-iso8583#readme",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "kalin.krustev",
+      "email": "kalin.krustev@gmail.com"
+    }
+  ],
+  "name": "ut-codec-iso8583",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/softwaregroup-bg/ut-codec-iso8583.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.1.1"
+}

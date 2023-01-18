@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  cursor: default;
+  flex-direction: column;
+  border: 1px solid #d6d6d6;
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 100%;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+
+.header {
+  border-bottom: 1px solid #d6d6d6;
+  background: #f9f9f9;
+  padding: 13px 3%;
+}
+
+.content {
+  background: #fff;
+  padding: 10px 20px;
+  flex: 1;
+}
+
+.inputOuterWrapper {
+  padding: 10px 0;
+}
+
+.headerRightButton {
+  float: right;
+  color: #2281ec;
+}
+
+span.headerRightButton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.headerText {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #595959;
+}

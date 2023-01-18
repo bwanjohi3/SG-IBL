@@ -1,0 +1,23 @@
+CREATE TABLE [atm].[sensor](
+    atmId bigint NOT NULL,
+    supervisorMode bit,
+    vibration bit,
+    door bit,
+    silentSignal bit,
+    electronicsEnclosure bit,
+    depositBin bit,
+    cardBin bit,
+    rejectBin bit,
+    cassette1 bit,
+    cassette2 bit,
+    cassette3 bit,
+    cassette4 bit,
+    coinDispenser bit,
+    coinHopper1 bit,
+    coinHopper2 bit,
+    coinHopper3 bit,
+    coinHopper4 bit,
+    cpmPockets bit,
+    CONSTRAINT pkAtmSensor PRIMARY KEY CLUSTERED (atmId ASC),
+    CONSTRAINT fkAtmSensor_Terminal FOREIGN KEY(atmId) REFERENCES [atm].[terminal] (actorId)
+)

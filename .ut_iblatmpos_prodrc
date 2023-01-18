@@ -1,0 +1,127 @@
+{
+    "log": {
+        "transformData": {
+            "zpk": "hide",
+            "zmk": "hide",
+            "tpk": "hide",
+            "bdk": "hide",
+            "ksn": "hide",
+            "emvTags": "hide",
+            "53": "hide",
+            "2": "hide",
+            "35": "hide",
+            "52": "hide",
+            "55": "hide",
+            "iso35": "hide"
+        }
+    },
+    "db": {
+        "db": {
+            "server": "192.168.77.12",
+            "database": "impl-iblatmpos-atm",
+            "requestTimeout": 2000000,
+            "user": "atm-live",
+            "password": "atm-live",
+            "options": {
+                "requestTimeout": 2000000
+            }
+        },
+        "create": {
+            "user": "sa",
+            "password":  "Password1@"
+        },
+        "externalPinMailer": {
+            "pinMailerFormat": ">L>L>L>022^0>L>022^1>L>022^2>L>022^3>L>022^4>L>022^5>L>L>L>L>L>L>L>037^P>L>L>L>L>L>L>L",
+            "zpk": "UDE1911753F2B90D3A3EA74403658F1E7"
+        }
+    },
+    "auditdb": {
+         "db": {
+             "server": "192.168.77.12",
+             "database": "impl-iblatmpos-atm-audit",			 
+             "requestTimeout": 8000000,
+             "user": "atm-live",
+             "password": "atm-live"
+         },
+		 "create": {
+            "user": "sa",
+            "password": "Password1@"
+        },
+         "logLevel": "trace"
+     },
+     "historydb": {
+         "db": {
+             "server": "192.168.77.12",
+             "database": "impl-iblatmpos-atm-history",             
+			 "requestTimeout": 80000000,
+             "user": "atm-live",
+             "password": "atm-live"
+         },
+		 "create": {
+            "user": "sa",
+            "password": "Password1@"
+        },
+         "logLevel": "trace"
+    },
+    "payshield": {
+        "logLevel": "trace",
+        "host": "192.168.77.22",
+        "port": 1500,
+        "idleSend": 100000,
+        "idleReceive": 120000,
+        "format": {
+            "headerFormat": "4/string-left-zero"
+        }
+    },
+    "hsm": {
+        "logLevel": "trace",
+        "pciMode": true
+    },
+    "posctp": {
+        "port": 35010
+    },
+    "update": {
+        "port": 35011
+    },
+    "tss": {
+        "logLevel": "trace",
+        "host":"192.168.77.96",
+        "port":"5200",
+        "airtimeSuspenseAccount":"00321840594020102",
+		"requestTimeout": 40000
+    },
+    "tssrest": {
+        "logLevel": "trace",
+        "url": "http://192.168.77.3:5007"
+    },
+    "dhi": {
+        "logLevel": "trace",
+        "port":"3154"
+    },
+    "h2h": {
+        "logLevel": "trace",
+        "host":"213.131.67.207",
+        "port":"6067"
+    },
+    "atmFlow": {
+        "logLevel":"trace",
+        "log": {
+            "transform": {
+                "session": "hide",
+                "55": "hide"
+            }
+        }
+    },
+    "cbl": false,
+    "cbl_": {
+        "logLevel": "trace",
+        "host":"117.247.82.141",
+        "port":"2153"
+    },
+    "pan": {
+        "pinLength": 4
+    },
+    "card": {
+        "pinLength": 4
+    }
+}

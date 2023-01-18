@@ -1,0 +1,15 @@
+{
+    "implementation": "directory",
+    "repl": false,
+    "console": false,
+    "log": false,
+    "debug": true,
+    "masterBus": {
+        "logLevel": "error",
+        "socket": false
+    },
+    "workerBus": {
+        "logLevel": "error"
+    },
+    "test": true
+}

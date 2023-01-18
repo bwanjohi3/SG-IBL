@@ -1,0 +1,51 @@
+.contentWrapper {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.rowPaddings {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.borderBottom {
+    border-bottom: 2px solid #E6E6E6;;
+}
+
+.countLabel {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.popupGridContainer {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.messageTooManyResults {
+    color: #FF4A4A;
+    padding: 20px;
+}
+
+.errorWrap {
+    margin-bottom: 10px;
+}
+
+.errorMessage {
+    color: #ff3333;
+}
+
+.buttonsRightMargin {
+    margin-right: 5px;
+}
+
+.cardHolderWrapper input {
+    text-transform: uppercase;
+}
+
+.cardHolderWrapper input::placeholder {
+    text-transform: none;
+}

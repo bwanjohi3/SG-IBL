@@ -1,0 +1,136 @@
+.cardDetCurrentStatusDetails {
+    margin: 10px 0;
+    width: 100%;
+}
+.cardDetCurrentStatusWrapperDetails{
+    margin: 0 auto;
+    text-align: center;
+}
+.cardDetCurrentStatusStatus{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+.cardDetCurrentStatusStatusDetails{
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+.cardDetCurrentStatusLabelDetails, .cardDetCurrentStatusStatusDetails{
+    display: inline-block;
+}
+.cardDetCurrentStatusLabelDetails{
+    padding: 3px 10px 3px 5px;
+}
+
+.cardDetCurrentStatusStatus{
+    padding: 0 2px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.cardDetCurrentStatusStatusDetails{
+    padding: 3px 10px 3px 10px;
+    text-transform: uppercase;
+}
+
+/* application */
+
+.cardDetCurrentStatusStatusDetailsNew, .cardDetCurrentStatusStatusDetailsRejected {
+    background-color: #FEAB41;
+    border: 1px solid #FEAB41;
+    color: #fff;
+}
+
+.cardDetCurrentStatusStatusDetailsApproved, .cardDetCurrentStatusStatusDetailsCompleted {
+    background-color: #68BE6C;
+    border: 1px solid #68BE6C;
+    color: #fff;
+}
+
+.cardDetCurrentStatusStatusDetailsDeclined {
+    background-color: #E85050;
+    border: 1px solid #E85050;
+    color: #fff;
+}
+
+/* batches */
+.cardDetCurrentStatusStatusDetailsProduction {
+    background-color: #FEAB41;
+    border: 1px solid #FEAB41;
+    color: #fff;
+}
+
+/* card */
+.cardDetCurrentStatusStatusDetailsPendingDestruction,
+.cardDetCurrentStatusStatusDetailsPendingDeactivation,
+.cardDetCurrentStatusStatusDetailsPendingAllocation,
+.cardDetCurrentStatusStatusDetailsPendingAcceptance,
+.cardDetCurrentStatusStatusDetailsPendingActivation,
+.cardDetCurrentStatusStatusDetailsSent{
+    background: #536ec5;
+    border: 1px solid #536ec5;
+    color: #fff;
+}
+.cardDetCurrentStatusStatusPendingDestruction,
+.cardDetCurrentStatusStatusPendingDeactivation,
+.cardDetCurrentStatusStatusPendingAllocation,
+.cardDetCurrentStatusStatusPendingAcceptance,
+.cardDetCurrentStatusStatusPendingActivation,
+.cardDetCurrentStatusStatusSent{
+    background: #fff;
+    border: 1px solid #536ec5;
+    color: #536ec5;
+}
+
+.cardDetCurrentStatusStatusDetailsActive,
+.cardDetCurrentStatusStatusDetailsAccepted{
+    background: #00a651;
+    border: 1px solid #00a651;
+    color: #fff;
+}
+.cardDetCurrentStatusStatusActive,
+.cardDetCurrentStatusStatusAccepted{
+    background: #fff;
+    border: 1px solid #00a651;
+    color: #00a651;
+}
+
+.cardDetCurrentStatusStatusDetailsHOT,
+.cardDetCurrentStatusStatusDetailsRejectedAllocation,
+.cardDetCurrentStatusStatusDetailsRejectedAcceptance{
+    background: #feac42;
+    border: 1px solid #feac42;
+    color: #fff;
+}
+.cardDetCurrentStatusStatusHOT,
+.cardDetCurrentStatusStatusRejectedAllocation,
+.cardDetCurrentStatusStatusRejectedAcceptance{
+    background: #fff;
+    border: 1px solid #feac42;
+    color: #feac42;
+}
+.cardDetCurrentStatusStatusDetailsDeclined{
+    background: #E95C5C;
+    border: 1px solid #E95C5C;
+    color: #fff;
+}
+.cardDetCurrentStatusStatusDeclined{
+    background: #fff;
+    border: 1px solid #E95C5C;
+    color: #E95C5C;
+}
+
+.cardDetCurrentStatusStatusDetailsInactive,
+.cardDetCurrentStatusStatusDetailsDestructed {
+    background: #666;
+    border: 1px solid #666;
+    color: #fff;
+}
+.cardDetCurrentStatusStatusInactive,
+.cardDetCurrentStatusStatusDestructed{
+    background: #fff;
+    border: 1px solid #666;
+    color: #666;
+}

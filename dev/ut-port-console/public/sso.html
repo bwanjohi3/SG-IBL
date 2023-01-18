@@ -1,0 +1,20 @@
+<html style="width: 0;height: 0;">
+    <head>
+        <script>
+            function setcookie(name, value) {
+                xhr = new XMLHttpRequest();
+                xhr.open('POST', '/sso/client', true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send(JSON.stringify({cookie: {name: name, value: value}}));
+            }
+            window.onload = function() {
+                function receiveMessage(e) {
+                    setcookie('ut5-cookie', e.data);
+                }
+
+                window.addEventListener('message', receiveMessage);
+            }
+        </script>
+    </head>
+    <body />
+</html>

@@ -1,0 +1,10 @@
+.contentWrapper {
+    max-height: 400px;
+    overflow-y: scroll;
+    border-top: 2px solid #E6E6E6;
+}
+
+.descriptionWrapper textarea{
+    resize: none;
+    outline: none;
+}

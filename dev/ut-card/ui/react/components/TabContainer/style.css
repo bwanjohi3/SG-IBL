@@ -1,0 +1,24 @@
+.tabContainerWrap { 
+    height: 100%;
+    position: relative;
+}
+
+.tabMenuWrap {
+    z-index: 999;
+    position: relative;
+}
+
+.bottomBorderderWrap {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.contentComponentWrapper {
+    /*height: 100%;*/
+    position: absolute;
+    top: 0px;
+    padding-top: 57px;
+    width: 100%;
+    overflow: auto;
+}

@@ -1,0 +1,38 @@
+{
+    "implementation": "standard",
+    "masterBus": {
+        "socket": "standard-ncr"
+    },
+    "debug": false,
+    "payshield": {
+        "host": "192.168.53.1",
+        "port": 1500
+    },
+    "console": {
+        "server": {
+            "host": "0.0.0.0",
+            "port": 38006
+        },
+		"host": "127.0.0.1",
+		"port": 38006
+    },
+    "ctp": {
+        "port": 8006
+    },
+    "ncr": {
+        "port": 8555,
+        "host": "0.0.0.0"
+    },
+    "log": {
+        "streams": [{
+            "level": "trace",
+            "stream": "../logRotateStream",
+            "streamConfig": {
+                "path": "ncr_%Y-%m-%d.json",
+                "symlink": "ncr.json",
+                "compress": true
+            }
+        }]
+    },
+    "repl": false
+}

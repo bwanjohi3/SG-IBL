@@ -1,0 +1,1 @@
+DROP SYNONYM [integration].[vCardAccountBalance] CREATE SYNONYM [integration].[vCardAccountBalance] FOR [card].[vCardAccountBalance]

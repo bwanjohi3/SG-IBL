@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ut-atm@6.3.0",
+        "scope": null,
+        "escapedName": "ut-atm",
+        "name": "ut-atm",
+        "rawSpec": "6.3.0",
+        "spec": "6.3.0",
+        "type": "version"
+      },
+      "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard"
+    ]
+  ],
+  "_from": "ut-atm@6.3.0",
+  "_id": "ut-atm@6.3.0",
+  "_inCache": true,
+  "_location": "/ut-atm",
+  "_nodeVersion": "6.9.5",
+  "_npmUser": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "hoek": "4.2.0",
+    "isemail": "2.2.1",
+    "items": "2.1.1",
+    "topo": "2.0.2"
+  },
+  "_requested": {
+    "raw": "ut-atm@6.3.0",
+    "scope": null,
+    "escapedName": "ut-atm",
+    "name": "ut-atm",
+    "rawSpec": "6.3.0",
+    "spec": "6.3.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-atm/-/ut-atm-6.3.0.tgz",
+  "_shasum": "775b8a8316d5ecb575d9fd2005a13dce375a7d08",
+  "_shrinkwrap": null,
+  "_spec": "ut-atm@6.3.0",
+  "_where": "F:\\JoboStuff\\BayPort\\AnotherClone\\impl-standard",
+  "author": {
+    "name": "Kalin Krustev",
+    "email": "kalin.krustev@softwaregroup-bg.com"
+  },
+  "dependencies": {
+    "boom": "^5.1.0",
+    "classnames": "2.2.5",
+    "date-fns": "1.21.1",
+    "immutable": "3.8.1",
+    "joi": "10.0.6",
+    "jsonwebtoken": "7.4.1",
+    "lodash.assign": "4.2.0",
+    "material-ui": "0.16.5",
+    "react": "15.6.1",
+    "react-redux": "5.0.5",
+    "react-router": "3.0.0",
+    "reactstrap": "3.9.5",
+    "ut-error": "^5.4.9",
+    "ut-front-react": "^9.11.1"
+  },
+  "description": "PIN Entry Device module",
+  "devDependencies": {
+    "ut-run": "^8.1.15",
+    "ut-test": "^5.6.3",
+    "ut-tools": "*"
+  },
+  "dist": {
+    "shasum": "775b8a8316d5ecb575d9fd2005a13dce375a7d08",
+    "tarball": "https://nexus.softwaregroup-bg.com/repository/npm-all/ut-atm/-/ut-atm-6.3.0.tgz"
+  },
+  "gitHead": "303b9a38e3829ae1e784f95547707220d7c319a0",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "name": "ut-atm",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "ut-bus": "^5.12.3",
+    "ut-front": "^7.1.1",
+    "ut-port-file": "^5.6.9",
+    "ut-port-httpserver": "^8.14.0",
+    "ut-port-jsonrpc": "^5.6.12",
+    "ut-port-mail": "^6.0.1",
+    "ut-port-script": "^5.5.2",
+    "ut-report": "^5.19.0",
+    "ut-rule": "^9.3.0",
+    "ut-transfer": "^6.19.0"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwaregroup-bg.com/repository/npm-internal"
+  },
+  "readme": "# ATM module \n\n## Scope\n\nThis module supports various AMTs through APTRA Advance NDC protocol version 3.2.1 or newer\n\n### Integrations\n\nImplements the logic for handling ATM states, while integrating with the following modules\n\n* Card transactions pre-processing module (ut-ctp)\n* Transfer module (ut-transfer)\n* NDC parsing (ut-codec/ndc)\n\n### Message types\n\nThe module implements the following messages:\n\n* terminal to central messages:\n  * transaction request\n  * solicited status for descriptors:\n    * 8 Device Fault, for device identifiers:\n      * D - card reader\n      * E - cash handler\n      * G - receipt printer\n      * H - journal printer\n      * L - encryptor\n      * P - sensors\n      * R - other device\n    * 9 Ready\n    * A Command Reject\n    * B Ready\n    * C Specific Command Reject\n    * F Terminal State\n      * Status information 1 - configuration information\n      * Status information 2 - supply counters\n      * Status information 6 - configuration id\n  * unsolicited status for device identifiers:\n    * A - clock\n    * B - power\n    * D - card reader\n    * E - cash handler\n    * F - depository\n    * G - receipt printer\n    * H - journal printer\n    * L - encryptor\n    * M - camera\n    * P - sensors\n    * R - other device\n* central to terminal\n  * terminal commands\n  * transaction reply\n  * state tables load\n  * screen data load\n  * enhanced configuration parameters load\n  * FIT data load\n  * date and time load\n  * key change\n  * dispencer currency cassette mapping\n  * EJ options and timers\n  * Acknowledge EJ upload block\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.softwaregroup-bg.com:ut5/ut-atm.git"
+  },
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "start": "node server.js",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "version": "6.3.0"
+}
